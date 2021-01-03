@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  WherigoPlayer
+
+  Created by Balázs Horváth on 2021. 01. 03..
+  
+*/
+
+"NSLocationWhenInUseUsageDescription" = "I need to access your location to show your current location on the map.";

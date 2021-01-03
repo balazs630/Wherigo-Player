@@ -13,6 +13,8 @@
 		ACC54E4D25A14372004320C7 /* kobor_kutyak_es_columbo.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */; };
 		ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4B25A14372004320C7 /* bajor_gizi_park.gwc */; };
 		ACC54E4F25A14372004320C7 /* catholic_churches.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4C25A14372004320C7 /* catholic_churches.gwc */; };
+		ACC54E5525A14653004320C7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC54E5425A14653004320C7 /* LocationService.swift */; };
+		ACC54E5925A146F9004320C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E5825A146F9004320C7 /* InfoPlist.strings */; };
 		ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF07B525A13A2D005F5499 /* AppDelegate.swift */; };
 		ACFF07BA25A13A2D005F5499 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF07B925A13A2D005F5499 /* MainViewController.swift */; };
 		ACFF07BD25A13A2D005F5499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFF07BB25A13A2D005F5499 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */ = {isa = PBXFileReference; lastKnownFileType = file; path = kobor_kutyak_es_columbo.gwc; sourceTree = "<group>"; };
 		ACC54E4B25A14372004320C7 /* bajor_gizi_park.gwc */ = {isa = PBXFileReference; lastKnownFileType = file; path = bajor_gizi_park.gwc; sourceTree = "<group>"; };
 		ACC54E4C25A14372004320C7 /* catholic_churches.gwc */ = {isa = PBXFileReference; lastKnownFileType = file; path = catholic_churches.gwc; sourceTree = "<group>"; };
+		ACC54E5425A14653004320C7 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		ACC54E5825A146F9004320C7 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		ACFF07B225A13A2D005F5499 /* WherigoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WherigoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFF07B525A13A2D005F5499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFF07B925A13A2D005F5499 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 		ACC54E1E25A13AA2004320C7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ACC54E5425A14653004320C7 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -77,6 +82,7 @@
 				ACC54E4525A14332004320C7 /* Bin */,
 				ACC54E4625A14338004320C7 /* GWC */,
 				ACC54E4425A14327004320C7 /* Images */,
+				ACC54E5725A146DE004320C7 /* Translations */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */,
 			);
 			path = GWC;
+			sourceTree = "<group>";
+		};
+		ACC54E5725A146DE004320C7 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				ACC54E5825A146F9004320C7 /* InfoPlist.strings */,
+			);
+			path = Translations;
 			sourceTree = "<group>";
 		};
 		ACFF07A925A13A2D005F5499 = {
@@ -223,6 +237,7 @@
 				ACC54E3B25A1420F004320C7 /* LICENSE in Resources */,
 				ACC54E4F25A14372004320C7 /* catholic_churches.gwc in Resources */,
 				ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */,
+				ACC54E5925A146F9004320C7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFF07BA25A13A2D005F5499 /* MainViewController.swift in Sources */,
+				ACC54E5525A14653004320C7 /* LocationService.swift in Sources */,
 				ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
