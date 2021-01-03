@@ -177,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACFF07C625A13A2E005F5499 /* Build configuration list for PBXNativeTarget "WherigoPlayer" */;
 			buildPhases = (
+				ACC54E5B25A147AF004320C7 /* SwiftLint */,
 				ACFF07AE25A13A2D005F5499 /* Sources */,
 				ACFF07AF25A13A2D005F5499 /* Frameworks */,
 				ACFF07B025A13A2D005F5499 /* Resources */,
@@ -242,6 +243,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACC54E5B25A147AF004320C7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#exit\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACFF07AE25A13A2D005F5499 /* Sources */ = {
