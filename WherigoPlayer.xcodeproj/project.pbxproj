@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACC54E3825A141D7004320C7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E3725A141D7004320C7 /* README.md */; };
-		ACC54E3B25A1420F004320C7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E3A25A1420F004320C7 /* LICENSE */; };
 		ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4725A14362004320C7 /* stdlib.lbc */; };
 		ACC54E4D25A14372004320C7 /* kobor_kutyak_es_columbo.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */; };
 		ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4B25A14372004320C7 /* bajor_gizi_park.gwc */; };
@@ -232,10 +230,8 @@
 				ACC54E4D25A14372004320C7 /* kobor_kutyak_es_columbo.gwc in Resources */,
 				ACFF07C225A13A2E005F5499 /* LaunchScreen.storyboard in Resources */,
 				ACFF07BF25A13A2E005F5499 /* Assets.xcassets in Resources */,
-				ACC54E3825A141D7004320C7 /* README.md in Resources */,
 				ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */,
 				ACFF07BD25A13A2D005F5499 /* Main.storyboard in Resources */,
-				ACC54E3B25A1420F004320C7 /* LICENSE in Resources */,
 				ACC54E4F25A14372004320C7 /* catholic_churches.gwc in Resources */,
 				ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */,
 				ACC54E5925A146F9004320C7 /* InfoPlist.strings in Resources */,
