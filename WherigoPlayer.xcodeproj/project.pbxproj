@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		ACC54E3825A141D7004320C7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E3725A141D7004320C7 /* README.md */; };
 		ACC54E3B25A1420F004320C7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E3A25A1420F004320C7 /* LICENSE */; };
+		ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4725A14362004320C7 /* stdlib.lbc */; };
+		ACC54E4D25A14372004320C7 /* kobor_kutyak_es_columbo.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */; };
+		ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4B25A14372004320C7 /* bajor_gizi_park.gwc */; };
+		ACC54E4F25A14372004320C7 /* catholic_churches.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4C25A14372004320C7 /* catholic_churches.gwc */; };
 		ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF07B525A13A2D005F5499 /* AppDelegate.swift */; };
 		ACFF07BA25A13A2D005F5499 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF07B925A13A2D005F5499 /* MainViewController.swift */; };
 		ACFF07BD25A13A2D005F5499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFF07BB25A13A2D005F5499 /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 		ACC54E3725A141D7004320C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ACC54E3A25A1420F004320C7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		ACC54E3D25A14237004320C7 /* WherigoPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WherigoPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		ACC54E4725A14362004320C7 /* stdlib.lbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = stdlib.lbc; sourceTree = "<group>"; };
+		ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */ = {isa = PBXFileReference; lastKnownFileType = file; path = kobor_kutyak_es_columbo.gwc; sourceTree = "<group>"; };
+		ACC54E4B25A14372004320C7 /* bajor_gizi_park.gwc */ = {isa = PBXFileReference; lastKnownFileType = file; path = bajor_gizi_park.gwc; sourceTree = "<group>"; };
+		ACC54E4C25A14372004320C7 /* catholic_churches.gwc */ = {isa = PBXFileReference; lastKnownFileType = file; path = catholic_churches.gwc; sourceTree = "<group>"; };
 		ACFF07B225A13A2D005F5499 /* WherigoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WherigoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFF07B525A13A2D005F5499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFF07B925A13A2D005F5499 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +74,9 @@
 		ACC54E2025A13ABB004320C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ACFF07BE25A13A2E005F5499 /* Assets.xcassets */,
+				ACC54E4525A14332004320C7 /* Bin */,
+				ACC54E4625A14338004320C7 /* GWC */,
+				ACC54E4425A14327004320C7 /* Images */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -89,6 +99,32 @@
 				ACFF07BB25A13A2D005F5499 /* Main.storyboard */,
 			);
 			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		ACC54E4425A14327004320C7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF07BE25A13A2E005F5499 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		ACC54E4525A14332004320C7 /* Bin */ = {
+			isa = PBXGroup;
+			children = (
+				ACC54E4725A14362004320C7 /* stdlib.lbc */,
+			);
+			path = Bin;
+			sourceTree = "<group>";
+		};
+		ACC54E4625A14338004320C7 /* GWC */ = {
+			isa = PBXGroup;
+			children = (
+				ACC54E4B25A14372004320C7 /* bajor_gizi_park.gwc */,
+				ACC54E4C25A14372004320C7 /* catholic_churches.gwc */,
+				ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */,
+			);
+			path = GWC;
 			sourceTree = "<group>";
 		};
 		ACFF07A925A13A2D005F5499 = {
@@ -178,11 +214,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC54E4D25A14372004320C7 /* kobor_kutyak_es_columbo.gwc in Resources */,
 				ACFF07C225A13A2E005F5499 /* LaunchScreen.storyboard in Resources */,
 				ACFF07BF25A13A2E005F5499 /* Assets.xcassets in Resources */,
 				ACC54E3825A141D7004320C7 /* README.md in Resources */,
+				ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */,
 				ACFF07BD25A13A2D005F5499 /* Main.storyboard in Resources */,
 				ACC54E3B25A1420F004320C7 /* LICENSE in Resources */,
+				ACC54E4F25A14372004320C7 /* catholic_churches.gwc in Resources */,
+				ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
