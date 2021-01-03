@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 import cz.matejcik.openwig.platform.SeekableFile;
+//balazs630 FIX
 //import menion.android.whereyougo.utils.Logger;
 
 public class WSeekableFile implements SeekableFile {
@@ -33,6 +34,7 @@ public class WSeekableFile implements SeekableFile {
         try {
             this.raf = new RandomAccessFile(file, "rw");
         } catch (Exception e) {
+            //balazs630 FIX
             //Logger.e(TAG, "WSeekableFile(" + file.getAbsolutePath() + ")", e);
         }
     }

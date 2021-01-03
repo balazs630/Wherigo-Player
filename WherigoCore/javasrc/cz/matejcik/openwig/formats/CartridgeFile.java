@@ -130,7 +130,12 @@ public class CartridgeFile {
 		// id of resource. 0 means deleted
 		if (a < 1) return null;
 
+		//Original code
+		//int ttype = source.readInt(); // we don't need this?
+
+		//balazs630 FIX
 		source.readInt(); // ttype
+
 		int len = source.readInt();
 
 		// we found the data - release cache

@@ -123,10 +123,12 @@ public class Engine implements Runnable {
 
 		ui.debugMsg("Loading stdlib...");
 
-        //Original code
-        //InputStream stdlib = getClass().getResourceAsStream("/cz/matejcik/openwig/stdlib.lbc");
+		//Original code
+		//InputStream stdlib = getClass().getResourceAsStream("/cz/matejcik/openwig/stdlib.lbc");
 
+		//balazs630 FIX
 		InputStream stdlib = getClass().getResourceAsStream("/stdlib.lbc");
+
 		LuaClosure closure = LuaPrototype.loadByteCode(stdlib, state.getEnvironment());
 		ui.debugMsg("calling...\n");
 		state.call(closure, null, null, null);

@@ -27,6 +27,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import cz.matejcik.openwig.platform.FileHandle;
+//balazs630 FIX
 //import menion.android.whereyougo.utils.Logger;
 
 public class WSaveFile implements FileHandle {
@@ -63,6 +64,7 @@ public class WSaveFile implements FileHandle {
     }
 
     public void truncate(long len) throws IOException {
+        //balazs630 FIX
         //Logger.d(TAG, "truncate()");
     }
 
