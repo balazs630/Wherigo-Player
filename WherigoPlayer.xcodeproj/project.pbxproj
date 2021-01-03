@@ -3,10 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */; };
+		ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */; };
+		ACAE1FA825A14AC300606EB6 /* WSaveFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7625A14AC200606EB6 /* WSaveFile.java */; };
+		ACAE1FA925A14AC300606EB6 /* LuaPrototype.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7B25A14AC300606EB6 /* LuaPrototype.java */; };
+		ACAE1FAA25A14AC300606EB6 /* LuaException.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7C25A14AC300606EB6 /* LuaException.java */; };
+		ACAE1FAB25A14AC300606EB6 /* JavaFunction.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7D25A14AC300606EB6 /* JavaFunction.java */; };
+		ACAE1FAC25A14AC300606EB6 /* LuaTableImpl.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7E25A14AC300606EB6 /* LuaTableImpl.java */; };
+		ACAE1FAD25A14AC300606EB6 /* LuaTable.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7F25A14AC300606EB6 /* LuaTable.java */; };
+		ACAE1FAE25A14AC300606EB6 /* UpValue.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8025A14AC300606EB6 /* UpValue.java */; };
+		ACAE1FAF25A14AC300606EB6 /* LuaThread.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8125A14AC300606EB6 /* LuaThread.java */; };
+		ACAE1FB025A14AC300606EB6 /* LuaCallFrame.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8225A14AC300606EB6 /* LuaCallFrame.java */; };
+		ACAE1FB125A14AC300606EB6 /* LuaClosure.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8325A14AC300606EB6 /* LuaClosure.java */; };
+		ACAE1FB225A14AC300606EB6 /* LuaState.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8425A14AC300606EB6 /* LuaState.java */; };
+		ACAE1FB325A14AC300606EB6 /* OsLib.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8625A14AC300606EB6 /* OsLib.java */; };
+		ACAE1FB425A14AC300606EB6 /* CoroutineLib.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8725A14AC300606EB6 /* CoroutineLib.java */; };
+		ACAE1FB525A14AC300606EB6 /* MathLib.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8825A14AC300606EB6 /* MathLib.java */; };
+		ACAE1FB625A14AC300606EB6 /* TableLib.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8925A14AC300606EB6 /* TableLib.java */; };
+		ACAE1FB725A14AC300606EB6 /* BaseLib.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8A25A14AC300606EB6 /* BaseLib.java */; };
+		ACAE1FB825A14AC300606EB6 /* StringLib.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8B25A14AC300606EB6 /* StringLib.java */; };
+		ACAE1FB925A14AC300606EB6 /* Cartridge.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F8F25A14AC300606EB6 /* Cartridge.java */; };
+		ACAE1FBA25A14AC300606EB6 /* WherigoLib.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9025A14AC300606EB6 /* WherigoLib.java */; };
+		ACAE1FBB25A14AC300606EB6 /* Savegame.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9225A14AC300606EB6 /* Savegame.java */; };
+		ACAE1FBC25A14AC300606EB6 /* CartridgeFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9325A14AC300606EB6 /* CartridgeFile.java */; };
+		ACAE1FBD25A14AC300606EB6 /* EventTable.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9425A14AC300606EB6 /* EventTable.java */; };
+		ACAE1FBE25A14AC300606EB6 /* SeekableFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9625A14AC300606EB6 /* SeekableFile.java */; };
+		ACAE1FBF25A14AC300606EB6 /* UI.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9725A14AC300606EB6 /* UI.java */; };
+		ACAE1FC025A14AC300606EB6 /* LocationService.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9825A14AC300606EB6 /* LocationService.java */; };
+		ACAE1FC125A14AC300606EB6 /* FileHandle.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9925A14AC300606EB6 /* FileHandle.java */; };
+		ACAE1FC225A14AC300606EB6 /* Thing.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9A25A14AC300606EB6 /* Thing.java */; };
+		ACAE1FC325A14AC300606EB6 /* Media.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9B25A14AC300606EB6 /* Media.java */; };
+		ACAE1FC425A14AC300606EB6 /* Serializable.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9C25A14AC300606EB6 /* Serializable.java */; };
+		ACAE1FC525A14AC300606EB6 /* Container.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9D25A14AC300606EB6 /* Container.java */; };
+		ACAE1FC625A14AC300606EB6 /* Timer.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9E25A14AC300606EB6 /* Timer.java */; };
+		ACAE1FC725A14AC300606EB6 /* Engine.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F9F25A14AC300606EB6 /* Engine.java */; };
+		ACAE1FC825A14AC300606EB6 /* Player.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA025A14AC300606EB6 /* Player.java */; };
+		ACAE1FC925A14AC300606EB6 /* ZonePoint.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA125A14AC300606EB6 /* ZonePoint.java */; };
+		ACAE1FCA25A14AC300606EB6 /* Task.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA225A14AC300606EB6 /* Task.java */; };
+		ACAE1FCB25A14AC300606EB6 /* Action.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA325A14AC300606EB6 /* Action.java */; };
+		ACAE1FCC25A14AC300606EB6 /* Zone.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA425A14AC300606EB6 /* Zone.java */; };
+		ACAE1FCD25A14AC300606EB6 /* BackgroundRunner.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA625A14AC300606EB6 /* BackgroundRunner.java */; };
 		ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4725A14362004320C7 /* stdlib.lbc */; };
 		ACC54E4D25A14372004320C7 /* kobor_kutyak_es_columbo.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4A25A14372004320C7 /* kobor_kutyak_es_columbo.gwc */; };
 		ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4B25A14372004320C7 /* bajor_gizi_park.gwc */; };
@@ -20,7 +60,68 @@
 		ACFF07C225A13A2E005F5499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFF07C025A13A2E005F5499 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		AC4DFEE125A14C9900E66E9D /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.java;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}.h",
+				"${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}.m",
+			);
+			outputFilesCompilerFlags = (
+				"",
+				"-fno-objc-arc",
+			);
+			runOncePerArchitecture = 0;
+			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]\nthen \n    echo \"J2OBJC_HOME not correctly defined in Build Settings, currently set to '${J2OBJC_HOME}'\"\n    exit 1\nfi\n\n\"${J2OBJC_HOME}/j2objc\" \\\n--swift-friendly \\\n--prefix 'menion.android.*=WIG' \\\n--prefix 'se.krka.*=WIG' \\\n--prefix 'cz.matejcik.*=WIG' \\\n-v -g -d ${DERIVED_FILE_DIR} -sourcepath \"${PROJECT_DIR}/WherigoCore/javasrc\" \\\n--no-package-directories ${INPUT_FILE_PATH};\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
+		ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSeekableFile.java; sourceTree = "<group>"; };
+		ACAE1F7625A14AC200606EB6 /* WSaveFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSaveFile.java; sourceTree = "<group>"; };
+		ACAE1F7B25A14AC300606EB6 /* LuaPrototype.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaPrototype.java; sourceTree = "<group>"; };
+		ACAE1F7C25A14AC300606EB6 /* LuaException.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaException.java; sourceTree = "<group>"; };
+		ACAE1F7D25A14AC300606EB6 /* JavaFunction.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JavaFunction.java; sourceTree = "<group>"; };
+		ACAE1F7E25A14AC300606EB6 /* LuaTableImpl.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaTableImpl.java; sourceTree = "<group>"; };
+		ACAE1F7F25A14AC300606EB6 /* LuaTable.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaTable.java; sourceTree = "<group>"; };
+		ACAE1F8025A14AC300606EB6 /* UpValue.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = UpValue.java; sourceTree = "<group>"; };
+		ACAE1F8125A14AC300606EB6 /* LuaThread.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaThread.java; sourceTree = "<group>"; };
+		ACAE1F8225A14AC300606EB6 /* LuaCallFrame.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaCallFrame.java; sourceTree = "<group>"; };
+		ACAE1F8325A14AC300606EB6 /* LuaClosure.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaClosure.java; sourceTree = "<group>"; };
+		ACAE1F8425A14AC300606EB6 /* LuaState.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LuaState.java; sourceTree = "<group>"; };
+		ACAE1F8625A14AC300606EB6 /* OsLib.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = OsLib.java; sourceTree = "<group>"; };
+		ACAE1F8725A14AC300606EB6 /* CoroutineLib.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CoroutineLib.java; sourceTree = "<group>"; };
+		ACAE1F8825A14AC300606EB6 /* MathLib.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MathLib.java; sourceTree = "<group>"; };
+		ACAE1F8925A14AC300606EB6 /* TableLib.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = TableLib.java; sourceTree = "<group>"; };
+		ACAE1F8A25A14AC300606EB6 /* BaseLib.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = BaseLib.java; sourceTree = "<group>"; };
+		ACAE1F8B25A14AC300606EB6 /* StringLib.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = StringLib.java; sourceTree = "<group>"; };
+		ACAE1F8F25A14AC300606EB6 /* Cartridge.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Cartridge.java; sourceTree = "<group>"; };
+		ACAE1F9025A14AC300606EB6 /* WherigoLib.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WherigoLib.java; sourceTree = "<group>"; };
+		ACAE1F9225A14AC300606EB6 /* Savegame.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Savegame.java; sourceTree = "<group>"; };
+		ACAE1F9325A14AC300606EB6 /* CartridgeFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CartridgeFile.java; sourceTree = "<group>"; };
+		ACAE1F9425A14AC300606EB6 /* EventTable.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = EventTable.java; sourceTree = "<group>"; };
+		ACAE1F9625A14AC300606EB6 /* SeekableFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SeekableFile.java; sourceTree = "<group>"; };
+		ACAE1F9725A14AC300606EB6 /* UI.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = UI.java; sourceTree = "<group>"; };
+		ACAE1F9825A14AC300606EB6 /* LocationService.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LocationService.java; sourceTree = "<group>"; };
+		ACAE1F9925A14AC300606EB6 /* FileHandle.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FileHandle.java; sourceTree = "<group>"; };
+		ACAE1F9A25A14AC300606EB6 /* Thing.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Thing.java; sourceTree = "<group>"; };
+		ACAE1F9B25A14AC300606EB6 /* Media.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Media.java; sourceTree = "<group>"; };
+		ACAE1F9C25A14AC300606EB6 /* Serializable.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Serializable.java; sourceTree = "<group>"; };
+		ACAE1F9D25A14AC300606EB6 /* Container.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Container.java; sourceTree = "<group>"; };
+		ACAE1F9E25A14AC300606EB6 /* Timer.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Timer.java; sourceTree = "<group>"; };
+		ACAE1F9F25A14AC300606EB6 /* Engine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Engine.java; sourceTree = "<group>"; };
+		ACAE1FA025A14AC300606EB6 /* Player.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Player.java; sourceTree = "<group>"; };
+		ACAE1FA125A14AC300606EB6 /* ZonePoint.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ZonePoint.java; sourceTree = "<group>"; };
+		ACAE1FA225A14AC300606EB6 /* Task.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Task.java; sourceTree = "<group>"; };
+		ACAE1FA325A14AC300606EB6 /* Action.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Action.java; sourceTree = "<group>"; };
+		ACAE1FA425A14AC300606EB6 /* Zone.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Zone.java; sourceTree = "<group>"; };
+		ACAE1FA625A14AC300606EB6 /* BackgroundRunner.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = BackgroundRunner.java; sourceTree = "<group>"; };
 		ACC54E3725A141D7004320C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ACC54E3A25A1420F004320C7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		ACC54E3D25A14237004320C7 /* WherigoPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WherigoPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -50,6 +151,180 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACAE1F6C25A14A3B00606EB6 /* WherigoCore */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F6D25A14AA600606EB6 /* javasrc */,
+			);
+			path = WherigoCore;
+			sourceTree = "<group>";
+		};
+		ACAE1F6D25A14AA600606EB6 /* javasrc */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F8C25A14AC300606EB6 /* cz */,
+				ACAE1F7125A14AC200606EB6 /* menion */,
+				ACAE1F7725A14AC300606EB6 /* se */,
+				ACAE1FA525A14AC300606EB6 /* util */,
+			);
+			path = javasrc;
+			sourceTree = "<group>";
+		};
+		ACAE1F7125A14AC200606EB6 /* menion */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7225A14AC200606EB6 /* android */,
+			);
+			path = menion;
+			sourceTree = "<group>";
+		};
+		ACAE1F7225A14AC200606EB6 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7325A14AC200606EB6 /* whereyougo */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		ACAE1F7325A14AC200606EB6 /* whereyougo */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7425A14AC200606EB6 /* openwig */,
+			);
+			path = whereyougo;
+			sourceTree = "<group>";
+		};
+		ACAE1F7425A14AC200606EB6 /* openwig */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */,
+				ACAE1F7625A14AC200606EB6 /* WSaveFile.java */,
+			);
+			path = openwig;
+			sourceTree = "<group>";
+		};
+		ACAE1F7725A14AC300606EB6 /* se */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7825A14AC300606EB6 /* krka */,
+			);
+			path = se;
+			sourceTree = "<group>";
+		};
+		ACAE1F7825A14AC300606EB6 /* krka */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7925A14AC300606EB6 /* kahlua */,
+			);
+			path = krka;
+			sourceTree = "<group>";
+		};
+		ACAE1F7925A14AC300606EB6 /* kahlua */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7A25A14AC300606EB6 /* vm */,
+				ACAE1F8525A14AC300606EB6 /* stdlib */,
+			);
+			path = kahlua;
+			sourceTree = "<group>";
+		};
+		ACAE1F7A25A14AC300606EB6 /* vm */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F7B25A14AC300606EB6 /* LuaPrototype.java */,
+				ACAE1F7C25A14AC300606EB6 /* LuaException.java */,
+				ACAE1F7D25A14AC300606EB6 /* JavaFunction.java */,
+				ACAE1F7E25A14AC300606EB6 /* LuaTableImpl.java */,
+				ACAE1F7F25A14AC300606EB6 /* LuaTable.java */,
+				ACAE1F8025A14AC300606EB6 /* UpValue.java */,
+				ACAE1F8125A14AC300606EB6 /* LuaThread.java */,
+				ACAE1F8225A14AC300606EB6 /* LuaCallFrame.java */,
+				ACAE1F8325A14AC300606EB6 /* LuaClosure.java */,
+				ACAE1F8425A14AC300606EB6 /* LuaState.java */,
+			);
+			path = vm;
+			sourceTree = "<group>";
+		};
+		ACAE1F8525A14AC300606EB6 /* stdlib */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F8625A14AC300606EB6 /* OsLib.java */,
+				ACAE1F8725A14AC300606EB6 /* CoroutineLib.java */,
+				ACAE1F8825A14AC300606EB6 /* MathLib.java */,
+				ACAE1F8925A14AC300606EB6 /* TableLib.java */,
+				ACAE1F8A25A14AC300606EB6 /* BaseLib.java */,
+				ACAE1F8B25A14AC300606EB6 /* StringLib.java */,
+			);
+			path = stdlib;
+			sourceTree = "<group>";
+		};
+		ACAE1F8C25A14AC300606EB6 /* cz */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F8D25A14AC300606EB6 /* matejcik */,
+			);
+			path = cz;
+			sourceTree = "<group>";
+		};
+		ACAE1F8D25A14AC300606EB6 /* matejcik */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F8E25A14AC300606EB6 /* openwig */,
+			);
+			path = matejcik;
+			sourceTree = "<group>";
+		};
+		ACAE1F8E25A14AC300606EB6 /* openwig */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F8F25A14AC300606EB6 /* Cartridge.java */,
+				ACAE1F9025A14AC300606EB6 /* WherigoLib.java */,
+				ACAE1F9125A14AC300606EB6 /* formats */,
+				ACAE1F9425A14AC300606EB6 /* EventTable.java */,
+				ACAE1F9525A14AC300606EB6 /* platform */,
+				ACAE1F9A25A14AC300606EB6 /* Thing.java */,
+				ACAE1F9B25A14AC300606EB6 /* Media.java */,
+				ACAE1F9C25A14AC300606EB6 /* Serializable.java */,
+				ACAE1F9D25A14AC300606EB6 /* Container.java */,
+				ACAE1F9E25A14AC300606EB6 /* Timer.java */,
+				ACAE1F9F25A14AC300606EB6 /* Engine.java */,
+				ACAE1FA025A14AC300606EB6 /* Player.java */,
+				ACAE1FA125A14AC300606EB6 /* ZonePoint.java */,
+				ACAE1FA225A14AC300606EB6 /* Task.java */,
+				ACAE1FA325A14AC300606EB6 /* Action.java */,
+				ACAE1FA425A14AC300606EB6 /* Zone.java */,
+			);
+			path = openwig;
+			sourceTree = "<group>";
+		};
+		ACAE1F9125A14AC300606EB6 /* formats */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F9225A14AC300606EB6 /* Savegame.java */,
+				ACAE1F9325A14AC300606EB6 /* CartridgeFile.java */,
+			);
+			path = formats;
+			sourceTree = "<group>";
+		};
+		ACAE1F9525A14AC300606EB6 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1F9625A14AC300606EB6 /* SeekableFile.java */,
+				ACAE1F9725A14AC300606EB6 /* UI.java */,
+				ACAE1F9825A14AC300606EB6 /* LocationService.java */,
+				ACAE1F9925A14AC300606EB6 /* FileHandle.java */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		ACAE1FA525A14AC300606EB6 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE1FA625A14AC300606EB6 /* BackgroundRunner.java */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		ACC54E1D25A13A83004320C7 /* AppFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +417,8 @@
 		ACFF07A925A13A2D005F5499 = {
 			isa = PBXGroup;
 			children = (
+				ACAE1F6C25A14A3B00606EB6 /* WherigoCore */,
+				ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */,
 				ACFF07B425A13A2D005F5499 /* WherigoPlayer */,
 				ACFF07B325A13A2D005F5499 /* Products */,
 			);
@@ -181,6 +458,7 @@
 				ACFF07B025A13A2D005F5499 /* Resources */,
 			);
 			buildRules = (
+				AC4DFEE125A14C9900E66E9D /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -266,8 +544,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAE1FBF25A14AC300606EB6 /* UI.java in Sources */,
+				ACAE1FB325A14AC300606EB6 /* OsLib.java in Sources */,
+				ACAE1FB225A14AC300606EB6 /* LuaState.java in Sources */,
+				ACAE1FB825A14AC300606EB6 /* StringLib.java in Sources */,
+				ACAE1FC825A14AC300606EB6 /* Player.java in Sources */,
+				ACAE1FC025A14AC300606EB6 /* LocationService.java in Sources */,
+				ACAE1FB525A14AC300606EB6 /* MathLib.java in Sources */,
+				ACAE1FA825A14AC300606EB6 /* WSaveFile.java in Sources */,
 				ACFF07BA25A13A2D005F5499 /* MainViewController.swift in Sources */,
+				ACAE1FB925A14AC300606EB6 /* Cartridge.java in Sources */,
+				ACAE1FB025A14AC300606EB6 /* LuaCallFrame.java in Sources */,
+				ACAE1FC925A14AC300606EB6 /* ZonePoint.java in Sources */,
+				ACAE1FAA25A14AC300606EB6 /* LuaException.java in Sources */,
+				ACAE1FC625A14AC300606EB6 /* Timer.java in Sources */,
+				ACAE1FA925A14AC300606EB6 /* LuaPrototype.java in Sources */,
+				ACAE1FB625A14AC300606EB6 /* TableLib.java in Sources */,
+				ACAE1FBA25A14AC300606EB6 /* WherigoLib.java in Sources */,
+				ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */,
+				ACAE1FBE25A14AC300606EB6 /* SeekableFile.java in Sources */,
+				ACAE1FC325A14AC300606EB6 /* Media.java in Sources */,
 				ACC54E5525A14653004320C7 /* LocationService.swift in Sources */,
+				ACAE1FAB25A14AC300606EB6 /* JavaFunction.java in Sources */,
+				ACAE1FAC25A14AC300606EB6 /* LuaTableImpl.java in Sources */,
+				ACAE1FBB25A14AC300606EB6 /* Savegame.java in Sources */,
+				ACAE1FC225A14AC300606EB6 /* Thing.java in Sources */,
+				ACAE1FBC25A14AC300606EB6 /* CartridgeFile.java in Sources */,
+				ACAE1FB725A14AC300606EB6 /* BaseLib.java in Sources */,
+				ACAE1FCB25A14AC300606EB6 /* Action.java in Sources */,
+				ACAE1FBD25A14AC300606EB6 /* EventTable.java in Sources */,
+				ACAE1FAF25A14AC300606EB6 /* LuaThread.java in Sources */,
+				ACAE1FC525A14AC300606EB6 /* Container.java in Sources */,
+				ACAE1FC725A14AC300606EB6 /* Engine.java in Sources */,
+				ACAE1FB425A14AC300606EB6 /* CoroutineLib.java in Sources */,
+				ACAE1FAD25A14AC300606EB6 /* LuaTable.java in Sources */,
+				ACAE1FC425A14AC300606EB6 /* Serializable.java in Sources */,
+				ACAE1FCD25A14AC300606EB6 /* BackgroundRunner.java in Sources */,
+				ACAE1FCC25A14AC300606EB6 /* Zone.java in Sources */,
+				ACAE1FB125A14AC300606EB6 /* LuaClosure.java in Sources */,
+				ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */,
+				ACAE1FCA25A14AC300606EB6 /* Task.java in Sources */,
+				ACAE1FAE25A14AC300606EB6 /* UpValue.java in Sources */,
+				ACAE1FC125A14AC300606EB6 /* FileHandle.java in Sources */,
 				ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,21 +733,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UW8QF9DSWQ;
+				FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
 				INFOPLIST_FILE = WherigoPlayer/SupportingFiles/Info.plist;
+				J2OBJC_HOME = "../j2objc/j2objc-2.7";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-ljre_emul",
+					"-ljre_util",
+					"-liconv",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.balazs630.WherigoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WherigoPlayer/SupportingFiles/WherigoPlayer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -439,20 +767,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UW8QF9DSWQ;
+				FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
 				INFOPLIST_FILE = WherigoPlayer/SupportingFiles/Info.plist;
+				J2OBJC_HOME = "../j2objc/j2objc-2.7";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-ljre_emul",
+					"-ljre_util",
+					"-liconv",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.balazs630.WherigoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WherigoPlayer/SupportingFiles/WherigoPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
