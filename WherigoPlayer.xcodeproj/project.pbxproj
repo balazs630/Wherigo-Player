@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4DFF4F25A1538600E66E9D /* WIGLocationEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */; };
+		AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */; };
 		ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */; };
 		ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */; };
 		ACAE1FA825A14AC300606EB6 /* WSaveFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7625A14AC200606EB6 /* WSaveFile.java */; };
@@ -82,6 +84,8 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGLocationEventHandler.swift; sourceTree = "<group>"; };
+		AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGUIEventHandler.swift; sourceTree = "<group>"; };
 		ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSeekableFile.java; sourceTree = "<group>"; };
 		ACAE1F7625A14AC200606EB6 /* WSaveFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSaveFile.java; sourceTree = "<group>"; };
@@ -151,6 +155,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC4DFF4C25A1532C00E66E9D /* EventHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */,
+				AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */,
+			);
+			path = EventHandlers;
+			sourceTree = "<group>";
+		};
 		ACAE1F6C25A14A3B00606EB6 /* WherigoCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +450,7 @@
 			children = (
 				ACFF07B525A13A2D005F5499 /* AppDelegate.swift */,
 				ACC54E1D25A13A83004320C7 /* AppFlow */,
+				AC4DFF4C25A1532C00E66E9D /* EventHandlers */,
 				ACC54E1E25A13AA2004320C7 /* Services */,
 				ACC54E1F25A13AB1004320C7 /* Common */,
 				ACC54E2025A13ABB004320C7 /* Resources */,
@@ -554,6 +568,7 @@
 				ACAE1FA825A14AC300606EB6 /* WSaveFile.java in Sources */,
 				ACFF07BA25A13A2D005F5499 /* MainViewController.swift in Sources */,
 				ACAE1FB925A14AC300606EB6 /* Cartridge.java in Sources */,
+				AC4DFF4F25A1538600E66E9D /* WIGLocationEventHandler.swift in Sources */,
 				ACAE1FB025A14AC300606EB6 /* LuaCallFrame.java in Sources */,
 				ACAE1FC925A14AC300606EB6 /* ZonePoint.java in Sources */,
 				ACAE1FAA25A14AC300606EB6 /* LuaException.java in Sources */,
@@ -561,6 +576,7 @@
 				ACAE1FA925A14AC300606EB6 /* LuaPrototype.java in Sources */,
 				ACAE1FB625A14AC300606EB6 /* TableLib.java in Sources */,
 				ACAE1FBA25A14AC300606EB6 /* WherigoLib.java in Sources */,
+				AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */,
 				ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */,
 				ACAE1FBE25A14AC300606EB6 /* SeekableFile.java in Sources */,
 				ACAE1FC325A14AC300606EB6 /* Media.java in Sources */,
