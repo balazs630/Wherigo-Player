@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC24108E25A3BA14006CD5F0 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24108D25A3BA14006CD5F0 /* Log.swift */; };
+		AC24109225A3BA4E006CD5F0 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */; };
+		AC24109525A3BA5E006CD5F0 /* UIResponderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109425A3BA5E006CD5F0 /* UIResponderExtensions.swift */; };
+		AC24109825A3BA8A006CD5F0 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109725A3BA8A006CD5F0 /* UIViewControllerExtensions.swift */; };
+		AC24109B25A3BAA1006CD5F0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109A25A3BAA1006CD5F0 /* UIViewExtensions.swift */; };
+		AC2410A025A3BAD4006CD5F0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109F25A3BAD4006CD5F0 /* LoadingViewController.swift */; };
+		AC2410A625A3BB46006CD5F0 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410A525A3BB46006CD5F0 /* UIStoryboardExtensions.swift */; };
+		AC2410A925A3BB7E006CD5F0 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */; };
+		AC2410AC25A3BBAE006CD5F0 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410AB25A3BBAE006CD5F0 /* UITableViewExtensions.swift */; };
+		AC2410AF25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410AE25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift */; };
+		AC2410B425A3BE81006CD5F0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410B325A3BE81006CD5F0 /* Localizable.swift */; };
+		AC2410B725A3BE9D006CD5F0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410B625A3BE9D006CD5F0 /* StringExtensions.swift */; };
+		AC2410BA25A3BEC2006CD5F0 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410B925A3BEC2006CD5F0 /* BaseError.swift */; };
+		AC2410BD25A3BF08006CD5F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410BC25A3BF08006CD5F0 /* Constants.swift */; };
+		AC2410C025A3BF0F006CD5F0 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410BF25A3BF0F006CD5F0 /* Texts.swift */; };
+		AC2410C325A3BF2E006CD5F0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410C225A3BF2E006CD5F0 /* Theme.swift */; };
+		AC2410C625A3C100006CD5F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC2410C525A3C100006CD5F0 /* Localizable.strings */; };
 		AC4DFF4F25A1538600E66E9D /* WIGLocationEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */; };
 		AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */; };
 		ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */; };
@@ -84,6 +101,23 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		AC24108D25A3BA14006CD5F0 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		AC24109425A3BA5E006CD5F0 /* UIResponderExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIResponderExtensions.swift; sourceTree = "<group>"; };
+		AC24109725A3BA8A006CD5F0 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		AC24109A25A3BAA1006CD5F0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		AC24109F25A3BAD4006CD5F0 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		AC2410A525A3BB46006CD5F0 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
+		AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		AC2410AB25A3BBAE006CD5F0 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		AC2410AE25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		AC2410B325A3BE81006CD5F0 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		AC2410B625A3BE9D006CD5F0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		AC2410B925A3BEC2006CD5F0 /* BaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		AC2410BC25A3BF08006CD5F0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC2410BF25A3BF0F006CD5F0 /* Texts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		AC2410C225A3BF2E006CD5F0 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AC2410C525A3C100006CD5F0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGLocationEventHandler.swift; sourceTree = "<group>"; };
 		AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGUIEventHandler.swift; sourceTree = "<group>"; };
 		ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
@@ -155,6 +189,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC24108C25A3BA14006CD5F0 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				AC24108D25A3BA14006CD5F0 /* Log.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		AC24109025A3BA20006CD5F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */,
+				AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */,
+				AC24109425A3BA5E006CD5F0 /* UIResponderExtensions.swift */,
+				AC2410A525A3BB46006CD5F0 /* UIStoryboardExtensions.swift */,
+				AC2410AB25A3BBAE006CD5F0 /* UITableViewExtensions.swift */,
+				AC24109725A3BA8A006CD5F0 /* UIViewControllerExtensions.swift */,
+				AC24109A25A3BAA1006CD5F0 /* UIViewExtensions.swift */,
+				AC2410AE25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift */,
+				AC2410B625A3BE9D006CD5F0 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC24109D25A3BAB9006CD5F0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AC24109E25A3BACC006CD5F0 /* Misc */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AC24109E25A3BACC006CD5F0 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				AC24109F25A3BAD4006CD5F0 /* LoadingViewController.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		AC2410B225A3BE70006CD5F0 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AC2410B925A3BEC2006CD5F0 /* BaseError.swift */,
+				AC2410B325A3BE81006CD5F0 /* Localizable.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 		AC4DFF4C25A1532C00E66E9D /* EventHandlers */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				ACAE1F6D25A14AA600606EB6 /* javasrc */,
+				ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */,
 			);
 			path = WherigoCore;
 			sourceTree = "<group>";
@@ -358,6 +442,13 @@
 		ACC54E1F25A13AB1004320C7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AC24109025A3BA20006CD5F0 /* Extensions */,
+				AC2410B225A3BE70006CD5F0 /* Interfaces */,
+				AC24108C25A3BA14006CD5F0 /* Logging */,
+				AC24109D25A3BAB9006CD5F0 /* UI */,
+				AC2410BC25A3BF08006CD5F0 /* Constants.swift */,
+				AC2410BF25A3BF0F006CD5F0 /* Texts.swift */,
+				AC2410C225A3BF2E006CD5F0 /* Theme.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -423,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC54E5825A146F9004320C7 /* InfoPlist.strings */,
+				AC2410C525A3C100006CD5F0 /* Localizable.strings */,
 			);
 			path = Translations;
 			sourceTree = "<group>";
@@ -431,7 +523,6 @@
 			isa = PBXGroup;
 			children = (
 				ACAE1F6C25A14A3B00606EB6 /* WherigoCore */,
-				ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */,
 				ACFF07B425A13A2D005F5499 /* WherigoPlayer */,
 				ACFF07B325A13A2D005F5499 /* Products */,
 			);
@@ -523,6 +614,7 @@
 				ACFF07C225A13A2E005F5499 /* LaunchScreen.storyboard in Resources */,
 				ACFF07BF25A13A2E005F5499 /* Assets.xcassets in Resources */,
 				ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */,
+				AC2410C625A3C100006CD5F0 /* Localizable.strings in Resources */,
 				ACFF07BD25A13A2D005F5499 /* Main.storyboard in Resources */,
 				ACC54E4F25A14372004320C7 /* catholic_churches.gwc in Resources */,
 				ACC54E4E25A14372004320C7 /* bajor_gizi_park.gwc in Resources */,
@@ -560,10 +652,13 @@
 			files = (
 				ACAE1FBF25A14AC300606EB6 /* UI.java in Sources */,
 				ACAE1FB325A14AC300606EB6 /* OsLib.java in Sources */,
+				AC2410A025A3BAD4006CD5F0 /* LoadingViewController.swift in Sources */,
 				ACAE1FB225A14AC300606EB6 /* LuaState.java in Sources */,
 				ACAE1FB825A14AC300606EB6 /* StringLib.java in Sources */,
+				AC2410BA25A3BEC2006CD5F0 /* BaseError.swift in Sources */,
 				ACAE1FC825A14AC300606EB6 /* Player.java in Sources */,
 				ACAE1FC025A14AC300606EB6 /* LocationService.java in Sources */,
+				AC24109825A3BA8A006CD5F0 /* UIViewControllerExtensions.swift in Sources */,
 				ACAE1FB525A14AC300606EB6 /* MathLib.java in Sources */,
 				ACAE1FA825A14AC300606EB6 /* WSaveFile.java in Sources */,
 				ACFF07BA25A13A2D005F5499 /* MainViewController.swift in Sources */,
@@ -573,15 +668,23 @@
 				ACAE1FC925A14AC300606EB6 /* ZonePoint.java in Sources */,
 				ACAE1FAA25A14AC300606EB6 /* LuaException.java in Sources */,
 				ACAE1FC625A14AC300606EB6 /* Timer.java in Sources */,
+				AC2410C025A3BF0F006CD5F0 /* Texts.swift in Sources */,
+				AC2410BD25A3BF08006CD5F0 /* Constants.swift in Sources */,
 				ACAE1FA925A14AC300606EB6 /* LuaPrototype.java in Sources */,
+				AC2410B725A3BE9D006CD5F0 /* StringExtensions.swift in Sources */,
 				ACAE1FB625A14AC300606EB6 /* TableLib.java in Sources */,
 				ACAE1FBA25A14AC300606EB6 /* WherigoLib.java in Sources */,
 				AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */,
 				ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */,
+				AC2410B425A3BE81006CD5F0 /* Localizable.swift in Sources */,
 				ACAE1FBE25A14AC300606EB6 /* SeekableFile.java in Sources */,
 				ACAE1FC325A14AC300606EB6 /* Media.java in Sources */,
 				ACC54E5525A14653004320C7 /* LocationService.swift in Sources */,
 				ACAE1FAB25A14AC300606EB6 /* JavaFunction.java in Sources */,
+				AC24108E25A3BA14006CD5F0 /* Log.swift in Sources */,
+				AC2410AF25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift in Sources */,
+				AC2410C325A3BF2E006CD5F0 /* Theme.swift in Sources */,
+				AC24109225A3BA4E006CD5F0 /* UIColorExtensions.swift in Sources */,
 				ACAE1FAC25A14AC300606EB6 /* LuaTableImpl.java in Sources */,
 				ACAE1FBB25A14AC300606EB6 /* Savegame.java in Sources */,
 				ACAE1FC225A14AC300606EB6 /* Thing.java in Sources */,
@@ -593,13 +696,18 @@
 				ACAE1FC525A14AC300606EB6 /* Container.java in Sources */,
 				ACAE1FC725A14AC300606EB6 /* Engine.java in Sources */,
 				ACAE1FB425A14AC300606EB6 /* CoroutineLib.java in Sources */,
+				AC2410AC25A3BBAE006CD5F0 /* UITableViewExtensions.swift in Sources */,
 				ACAE1FAD25A14AC300606EB6 /* LuaTable.java in Sources */,
+				AC24109525A3BA5E006CD5F0 /* UIResponderExtensions.swift in Sources */,
 				ACAE1FC425A14AC300606EB6 /* Serializable.java in Sources */,
+				AC2410A625A3BB46006CD5F0 /* UIStoryboardExtensions.swift in Sources */,
 				ACAE1FCD25A14AC300606EB6 /* BackgroundRunner.java in Sources */,
 				ACAE1FCC25A14AC300606EB6 /* Zone.java in Sources */,
 				ACAE1FB125A14AC300606EB6 /* LuaClosure.java in Sources */,
 				ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */,
+				AC2410A925A3BB7E006CD5F0 /* UIApplicationExtensions.swift in Sources */,
 				ACAE1FCA25A14AC300606EB6 /* Task.java in Sources */,
+				AC24109B25A3BAA1006CD5F0 /* UIViewExtensions.swift in Sources */,
 				ACAE1FAE25A14AC300606EB6 /* UpValue.java in Sources */,
 				ACAE1FC125A14AC300606EB6 /* FileHandle.java in Sources */,
 				ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */,
