@@ -7,40 +7,40 @@
 
 class WIGLocationEventHandler: NSObject, WIGLocationServiceProtocol {
     func getLatitude() -> Double {
-        debugPrint("getLatitude")
+        Log.debug("getLatitude")
         return LocationService.shared.location?.coordinate.latitude ?? 47.49
     }
 
     func getLongitude() -> Double {
-        debugPrint("getLongitude")
+        Log.debug("getLongitude")
         return LocationService.shared.location?.coordinate.longitude ?? 19.04
     }
 
     func getAltitude() -> Double {
-        debugPrint("getAltitude")
+        Log.debug("getAltitude")
         return 100
     }
 
     func getHeading() -> Double {
-        debugPrint("getHeading")
+        Log.debug("getHeading")
         return 0
     }
 
     func getPrecision() -> Double {
-        debugPrint("getPrecision")
+        Log.debug("getPrecision")
         return 5
     }
 
     func getState() -> Int32 {
-        debugPrint("getState")
+        Log.debug("getState")
         return WIGLocationService.ONLINE
     }
 
     func connect() {
-        debugPrint("connect")
+        Log.debug("connect")
     }
 
     func disconnect() {
-        debugPrint("disconnect")
+        Log.debug("disconnect")
     }
 }
