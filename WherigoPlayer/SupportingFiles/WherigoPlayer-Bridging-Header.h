@@ -47,3 +47,4 @@
 #import "java/io/FileOutputStream.h"
 #import "java/io/DataInputStream.h"
 #import "java/io/DataOutputStream.h"
+#import "java/util/Vector.h"

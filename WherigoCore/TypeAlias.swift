@@ -7,6 +7,7 @@
 
 typealias WIGFile = JavaIoFile
 typealias WIGFileOutputStream = JavaIoFileOutputStream
+typealias WIGVector = JavaUtilVector
 
 typealias WIGSeekableFile = WIGWSeekableFile
 typealias WIGSaveFile = WIGWSaveFile
