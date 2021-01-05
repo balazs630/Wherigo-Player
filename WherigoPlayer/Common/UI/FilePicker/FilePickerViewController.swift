@@ -9,11 +9,7 @@ import UIKit
 
 class FilePickerViewController: UIDocumentPickerViewController {
     // MARK: Properties
-    private var configuration = FilePickerConfiguration() {
-        didSet {
-            allowsMultipleSelection = configuration.allowsMultipleSelection
-        }
-    }
+    private var configuration = FilePickerConfiguration()
 
     // MARK: Initializers
     override init(documentTypes allowedUTIs: [String], in mode: UIDocumentPickerMode) {
@@ -38,6 +34,7 @@ class FilePickerViewController: UIDocumentPickerViewController {
     // MARK: Configuration
     private func configureSelf() {
         delegate = self
+        allowsMultipleSelection = configuration.allowsMultipleSelection
     }
 }
 
@@ -46,6 +43,7 @@ extension FilePickerViewController: UIDocumentPickerDelegate {
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         do {
             try urls.forEach { url in
+                Log.debug("didPickDocument: `\(url.lastPathComponent)`")
                 let isAccessingUrl = url.startAccessingSecurityScopedResource()
 
                 try FileManager.default.copyItem(

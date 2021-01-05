@@ -9,7 +9,7 @@ import UIKit
 
 struct FilePickerConfiguration {
     var documentTypes = ["kUTTypeData"]
-    var documentPickerMode = UIDocumentPickerMode.import
+    var documentPickerMode = UIDocumentPickerMode.open
     var allowsMultipleSelection = true
-    var destinationUrl = FileManager.documentsDirectory
+    var destinationUrl = FileManager.default.documentsDirectory
 }
