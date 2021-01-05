@@ -69,6 +69,9 @@
 		ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4725A14362004320C7 /* stdlib.lbc */; };
 		ACC54E5525A14653004320C7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC54E5425A14653004320C7 /* LocationService.swift */; };
 		ACC54E5925A146F9004320C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E5825A146F9004320C7 /* InfoPlist.strings */; };
+		ACF3379625A3E3BF00248C5B /* FilePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3379525A3E3BF00248C5B /* FilePickerViewController.swift */; };
+		ACF3379B25A3F17C00248C5B /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3379A25A3F17C00248C5B /* FileManagerExtensions.swift */; };
+		ACF3379F25A3F24E00248C5B /* FilePickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3379E25A3F24E00248C5B /* FilePickerConfiguration.swift */; };
 		ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF07B525A13A2D005F5499 /* AppDelegate.swift */; };
 		ACFF07BA25A13A2D005F5499 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF07B925A13A2D005F5499 /* MainViewController.swift */; };
 		ACFF07BD25A13A2D005F5499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFF07BB25A13A2D005F5499 /* Main.storyboard */; };
@@ -163,6 +166,9 @@
 		ACC54E4725A14362004320C7 /* stdlib.lbc */ = {isa = PBXFileReference; lastKnownFileType = file; path = stdlib.lbc; sourceTree = "<group>"; };
 		ACC54E5425A14653004320C7 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		ACC54E5825A146F9004320C7 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		ACF3379525A3E3BF00248C5B /* FilePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerViewController.swift; sourceTree = "<group>"; };
+		ACF3379A25A3F17C00248C5B /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
+		ACF3379E25A3F24E00248C5B /* FilePickerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerConfiguration.swift; sourceTree = "<group>"; };
 		ACFF07B225A13A2D005F5499 /* WherigoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WherigoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFF07B525A13A2D005F5499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFF07B925A13A2D005F5499 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +200,8 @@
 		AC24109025A3BA20006CD5F0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ACF3379A25A3F17C00248C5B /* FileManagerExtensions.swift */,
+				AC2410B625A3BE9D006CD5F0 /* StringExtensions.swift */,
 				AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */,
 				AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */,
 				AC24109425A3BA5E006CD5F0 /* UIResponderExtensions.swift */,
@@ -202,7 +210,6 @@
 				AC24109725A3BA8A006CD5F0 /* UIViewControllerExtensions.swift */,
 				AC24109A25A3BAA1006CD5F0 /* UIViewExtensions.swift */,
 				AC2410AE25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift */,
-				AC2410B625A3BE9D006CD5F0 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,6 +217,7 @@
 		AC24109D25A3BAB9006CD5F0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				ACF337A125A3F27400248C5B /* FilePicker */,
 				AC24109E25A3BACC006CD5F0 /* Misc */,
 			);
 			path = UI;
@@ -502,6 +510,15 @@
 			path = Translations;
 			sourceTree = "<group>";
 		};
+		ACF337A125A3F27400248C5B /* FilePicker */ = {
+			isa = PBXGroup;
+			children = (
+				ACF3379E25A3F24E00248C5B /* FilePickerConfiguration.swift */,
+				ACF3379525A3E3BF00248C5B /* FilePickerViewController.swift */,
+			);
+			path = FilePicker;
+			sourceTree = "<group>";
+		};
 		ACFF07A925A13A2D005F5499 = {
 			isa = PBXGroup;
 			children = (
@@ -646,6 +663,7 @@
 				AC4DFF4F25A1538600E66E9D /* WIGLocationEventHandler.swift in Sources */,
 				ACAE1FB025A14AC300606EB6 /* LuaCallFrame.java in Sources */,
 				ACAE1FC925A14AC300606EB6 /* ZonePoint.java in Sources */,
+				ACF3379625A3E3BF00248C5B /* FilePickerViewController.swift in Sources */,
 				ACAE1FAA25A14AC300606EB6 /* LuaException.java in Sources */,
 				ACAE1FC625A14AC300606EB6 /* Timer.java in Sources */,
 				AC2410C025A3BF0F006CD5F0 /* Texts.swift in Sources */,
@@ -658,6 +676,7 @@
 				ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */,
 				AC2410B425A3BE81006CD5F0 /* Localizable.swift in Sources */,
 				ACAE1FBE25A14AC300606EB6 /* SeekableFile.java in Sources */,
+				ACF3379B25A3F17C00248C5B /* FileManagerExtensions.swift in Sources */,
 				ACAE1FC325A14AC300606EB6 /* Media.java in Sources */,
 				ACC54E5525A14653004320C7 /* LocationService.swift in Sources */,
 				ACAE1FAB25A14AC300606EB6 /* JavaFunction.java in Sources */,
@@ -674,6 +693,7 @@
 				ACAE1FBD25A14AC300606EB6 /* EventTable.java in Sources */,
 				ACAE1FAF25A14AC300606EB6 /* LuaThread.java in Sources */,
 				ACAE1FC525A14AC300606EB6 /* Container.java in Sources */,
+				ACF3379F25A3F24E00248C5B /* FilePickerConfiguration.swift in Sources */,
 				ACAE1FC725A14AC300606EB6 /* Engine.java in Sources */,
 				ACAE1FB425A14AC300606EB6 /* CoroutineLib.java in Sources */,
 				AC2410AC25A3BBAE006CD5F0 /* UITableViewExtensions.swift in Sources */,
