@@ -10,6 +10,7 @@ import UIKit
 
 extension UIStoryboard {
     static let main = UIStoryboard(name: "Main", bundle: nil)
+    static let cartridgePicker = UIStoryboard(name: "CartridgePicker", bundle: nil)
 
     func instantiateViewController<ViewController: UIViewController>(
         _ type: ViewController.Type,
