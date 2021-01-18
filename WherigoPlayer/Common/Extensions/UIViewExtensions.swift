@@ -22,4 +22,12 @@ extension UIView {
             layer.cornerRadius = abs(CGFloat(Int(newValue * 100)) / 100)
         }
     }
+
+    func addOverlayingSubView(view customView: UIView) {
+        guard !customView.isDescendant(of: self) else { return }
+
+        customView.frame = bounds
+        addSubview(customView)
+        bringSubviewToFront(customView)
+    }
 }

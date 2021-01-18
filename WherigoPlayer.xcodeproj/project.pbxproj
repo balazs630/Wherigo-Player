@@ -70,6 +70,7 @@
 		ACC54E5525A14653004320C7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC54E5425A14653004320C7 /* LocationService.swift */; };
 		ACC54E5925A146F9004320C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E5825A146F9004320C7 /* InfoPlist.strings */; };
 		ACDC317E25AB68C50082FF93 /* CartridgePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDC317D25AB68C50082FF93 /* CartridgePickerCell.xib */; };
+		ACE9FC1D25AB8F2100825BE4 /* CartridgeImportGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9FC1C25AB8F2100825BE4 /* CartridgeImportGuideViewController.swift */; };
 		ACEEB30425A4F707007AC2BA /* CartridgePickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEB30325A4F707007AC2BA /* CartridgePickerDataSource.swift */; };
 		ACEEB30725A4F8ED007AC2BA /* CartridgePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEB30625A4F8ED007AC2BA /* CartridgePickerCell.swift */; };
 		ACEEB30A25A4F9A5007AC2BA /* CartridgePickerDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEB30925A4F9A5007AC2BA /* CartridgePickerDisplayItem.swift */; };
@@ -173,6 +174,7 @@
 		ACC54E5425A14653004320C7 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		ACC54E5825A146F9004320C7 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		ACDC317D25AB68C50082FF93 /* CartridgePickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartridgePickerCell.xib; sourceTree = "<group>"; };
+		ACE9FC1C25AB8F2100825BE4 /* CartridgeImportGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeImportGuideViewController.swift; sourceTree = "<group>"; };
 		ACEEB30325A4F707007AC2BA /* CartridgePickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgePickerDataSource.swift; sourceTree = "<group>"; };
 		ACEEB30625A4F8ED007AC2BA /* CartridgePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgePickerCell.swift; sourceTree = "<group>"; };
 		ACEEB30925A4F9A5007AC2BA /* CartridgePickerDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgePickerDisplayItem.swift; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 				ACDC318225AB7AEC0082FF93 /* CartridgePickerCell */,
 				ACFF07BB25A13A2D005F5499 /* CartridgePicker.storyboard */,
 				ACFF07B925A13A2D005F5499 /* CartridgePickerViewController.swift */,
+				ACE9FC1C25AB8F2100825BE4 /* CartridgeImportGuideViewController.swift */,
 				ACEEB30325A4F707007AC2BA /* CartridgePickerDataSource.swift */,
 				ACEEB30925A4F9A5007AC2BA /* CartridgePickerDisplayItem.swift */,
 			);
@@ -674,6 +677,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE9FC1D25AB8F2100825BE4 /* CartridgeImportGuideViewController.swift in Sources */,
 				ACAE1FBF25A14AC300606EB6 /* UI.java in Sources */,
 				ACAE1FB325A14AC300606EB6 /* OsLib.java in Sources */,
 				ACEEB30A25A4F9A5007AC2BA /* CartridgePickerDisplayItem.swift in Sources */,

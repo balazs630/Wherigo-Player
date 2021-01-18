@@ -10,6 +10,7 @@ import UIKit
 class FilePickerViewController: UIDocumentPickerViewController {
     // MARK: Properties
     private var configuration = FilePickerConfiguration()
+    var didPickDocuments: () -> Void = {}
 
     // MARK: Initializers
     override init(documentTypes allowedUTIs: [String], in mode: UIDocumentPickerMode) {
@@ -58,5 +59,7 @@ extension FilePickerViewController: UIDocumentPickerDelegate {
         } catch {
             Log.debug(error)
         }
+
+        didPickDocuments()
     }
 }

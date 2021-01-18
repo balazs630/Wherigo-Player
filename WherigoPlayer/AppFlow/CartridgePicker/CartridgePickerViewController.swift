@@ -10,14 +10,29 @@ import UIKit
 class CartridgePickerViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet private weak var cartridgeCollectionView: UICollectionView!
+    @IBOutlet weak var addBarButton: UIBarButtonItem!
 
     // MARK: Properties
-    private let dataSource = CartridgePickerDataSource(items: CartridgeService.cartridgeFiles())
+    private var importerGuideViewController: CartridgeImportGuideViewController?
+    private var dataSource: CartridgePickerDataSource!
 
-    // MARK: View Lifecycle
+    // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSelf()
+        fetchCartridgeFiles()
+        presentEmptyViewIfNeeded()
+    }
+
+    // MARK: Actions
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        let importerGuideViewController = UIStoryboard.cartridgePicker
+            .instantiateViewController(CartridgeImportGuideViewController.self)
+        importerGuideViewController.cartridgeDidImport = { [weak self] in
+            importerGuideViewController.dismiss(animated: true)
+            self?.fetchCartridgeFiles()
+        }
+        present(importerGuideViewController, animated: true)
     }
 
     // MARK: Configuration
@@ -25,11 +40,34 @@ class CartridgePickerViewController: UIViewController {
         configureCartridgeCollectionView()
     }
 
-    private func configureCartridgeCollectionView() {
+    private func fetchCartridgeFiles() {
+        dataSource = CartridgePickerDataSource(items: CartridgeService.cartridgeFiles())
         cartridgeCollectionView.dataSource = dataSource
-        cartridgeCollectionView.delegate = self
+        addBarButton.isEnabled = !dataSource.items.isEmpty
+    }
 
+    private func configureCartridgeCollectionView() {
+        cartridgeCollectionView.delegate = self
         cartridgeCollectionView.register(CartridgePickerCell.self)
+    }
+
+    private func presentEmptyViewIfNeeded() {
+        guard dataSource.items.isEmpty else {
+            removeEmptyView()
+            return
+        }
+
+        importerGuideViewController = UIStoryboard.cartridgePicker
+            .instantiateViewController(CartridgeImportGuideViewController.self)
+        importerGuideViewController?.cartridgeDidImport = { [weak self] in
+            self?.removeEmptyView()
+            self?.fetchCartridgeFiles()
+        }
+        cartridgeCollectionView.addOverlayingSubView(view: importerGuideViewController!.view)
+    }
+
+    private func removeEmptyView() {
+        importerGuideViewController?.view.removeFromSuperview()
     }
 }
 
