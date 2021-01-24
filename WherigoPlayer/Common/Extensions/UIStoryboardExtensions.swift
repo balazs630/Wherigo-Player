@@ -9,8 +9,9 @@
 import UIKit
 
 extension UIStoryboard {
-    static let main = UIStoryboard(name: "Main", bundle: nil)
     static let cartridgePicker = UIStoryboard(name: "CartridgePicker", bundle: nil)
+    static let cartridgeDetails = UIStoryboard(name: "CartridgeDetails", bundle: nil)
+    static let cartridgeGame = UIStoryboard(name: "CartridgeGame", bundle: nil)
 
     func instantiateViewController<ViewController: UIViewController>(
         _ type: ViewController.Type,

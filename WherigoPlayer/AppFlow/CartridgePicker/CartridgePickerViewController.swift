@@ -75,7 +75,13 @@ class CartridgePickerViewController: UIViewController {
 extension CartridgePickerViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = dataSource.items[indexPath.row]
-        Log.debug("selected: \(selectedItem)")
+
+        let detailsScreen = UIStoryboard.cartridgeDetails
+            .instantiateViewController(CartridgeDetailsViewController.self)
+        detailsScreen.cartridgeFile = selectedItem
+        detailsScreen.displayItem = .init(cartidgeFile: selectedItem)
+
+        navigationController?.pushViewController(detailsScreen, animated: true)
     }
 }
 

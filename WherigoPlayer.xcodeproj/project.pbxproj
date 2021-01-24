@@ -26,6 +26,12 @@
 		AC2410C625A3C100006CD5F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC2410C525A3C100006CD5F0 /* Localizable.strings */; };
 		AC4DFF4F25A1538600E66E9D /* WIGLocationEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */; };
 		AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */; };
+		AC74CB0D25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB0C25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift */; };
+		AC74CB1125BB9C9600BA5877 /* CartridgeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74CB1025BB9C9600BA5877 /* CartridgeDetails.storyboard */; };
+		AC74CB1725BB9F9000BA5877 /* CartridgeGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */; };
+		AC74CB1A25BB9FA200BA5877 /* CartridgeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB1925BB9FA200BA5877 /* CartridgeGameViewController.swift */; };
+		AC74CB1D25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB1C25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift */; };
+		AC74CB2025BD130900BA5877 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB1F25BD130900BA5877 /* UIImageViewExtensions.swift */; };
 		ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */; };
 		ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */; };
 		ACAE1FA825A14AC300606EB6 /* WSaveFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7625A14AC200606EB6 /* WSaveFile.java */; };
@@ -127,6 +133,12 @@
 		AC2410C525A3C100006CD5F0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGLocationEventHandler.swift; sourceTree = "<group>"; };
 		AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGUIEventHandler.swift; sourceTree = "<group>"; };
+		AC74CB0C25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeDetailsViewController.swift; sourceTree = "<group>"; };
+		AC74CB1025BB9C9600BA5877 /* CartridgeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartridgeDetails.storyboard; sourceTree = "<group>"; };
+		AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartridgeGame.storyboard; sourceTree = "<group>"; };
+		AC74CB1925BB9FA200BA5877 /* CartridgeGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeGameViewController.swift; sourceTree = "<group>"; };
+		AC74CB1C25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeDetailsDisplayItem.swift; sourceTree = "<group>"; };
+		AC74CB1F25BD130900BA5877 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSeekableFile.java; sourceTree = "<group>"; };
 		ACAE1F7625A14AC200606EB6 /* WSaveFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSaveFile.java; sourceTree = "<group>"; };
@@ -219,6 +231,7 @@
 				AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */,
 				ACEEB31A25A51FB4007AC2BA /* UICollectionViewExtensions.swift */,
 				AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */,
+				AC74CB1F25BD130900BA5877 /* UIImageViewExtensions.swift */,
 				AC24109425A3BA5E006CD5F0 /* UIResponderExtensions.swift */,
 				AC2410A525A3BB46006CD5F0 /* UIStoryboardExtensions.swift */,
 				AC2410AB25A3BBAE006CD5F0 /* UITableViewExtensions.swift */,
@@ -262,6 +275,25 @@
 				AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */,
 			);
 			path = EventHandlers;
+			sourceTree = "<group>";
+		};
+		AC74CB0B25BB9C7600BA5877 /* CartridgeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AC74CB1025BB9C9600BA5877 /* CartridgeDetails.storyboard */,
+				AC74CB0C25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift */,
+				AC74CB1C25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift */,
+			);
+			path = CartridgeDetails;
+			sourceTree = "<group>";
+		};
+		AC74CB1425BB9E8A00BA5877 /* CartridgeGame */ = {
+			isa = PBXGroup;
+			children = (
+				AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */,
+				AC74CB1925BB9FA200BA5877 /* CartridgeGameViewController.swift */,
+			);
+			path = CartridgeGame;
 			sourceTree = "<group>";
 		};
 		ACAE1F6C25A14A3B00606EB6 /* WherigoCore */ = {
@@ -444,6 +476,8 @@
 			children = (
 				ACFF07C025A13A2E005F5499 /* LaunchScreen.storyboard */,
 				ACC54E2325A13B19004320C7 /* CartridgePicker */,
+				AC74CB0B25BB9C7600BA5877 /* CartridgeDetails */,
+				AC74CB1425BB9E8A00BA5877 /* CartridgeGame */,
 			);
 			path = AppFlow;
 			sourceTree = "<group>";
@@ -644,6 +678,8 @@
 				ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */,
 				ACDC317E25AB68C50082FF93 /* CartridgePickerCell.xib in Resources */,
 				AC2410C625A3C100006CD5F0 /* Localizable.strings in Resources */,
+				AC74CB1725BB9F9000BA5877 /* CartridgeGame.storyboard in Resources */,
+				AC74CB1125BB9C9600BA5877 /* CartridgeDetails.storyboard in Resources */,
 				ACFF07BD25A13A2D005F5499 /* CartridgePicker.storyboard in Resources */,
 				ACC54E5925A146F9004320C7 /* InfoPlist.strings in Resources */,
 			);
@@ -699,9 +735,11 @@
 				ACAE1FC925A14AC300606EB6 /* ZonePoint.java in Sources */,
 				ACF3379625A3E3BF00248C5B /* FilePickerViewController.swift in Sources */,
 				ACAE1FAA25A14AC300606EB6 /* LuaException.java in Sources */,
+				AC74CB1A25BB9FA200BA5877 /* CartridgeGameViewController.swift in Sources */,
 				ACAE1FC625A14AC300606EB6 /* Timer.java in Sources */,
 				AC2410C025A3BF0F006CD5F0 /* Texts.swift in Sources */,
 				AC2410BD25A3BF08006CD5F0 /* Constants.swift in Sources */,
+				AC74CB0D25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift in Sources */,
 				ACAE1FA925A14AC300606EB6 /* LuaPrototype.java in Sources */,
 				AC2410B725A3BE9D006CD5F0 /* StringExtensions.swift in Sources */,
 				ACAE1FB625A14AC300606EB6 /* TableLib.java in Sources */,
@@ -713,6 +751,7 @@
 				ACF3379B25A3F17C00248C5B /* FileManagerExtensions.swift in Sources */,
 				ACAE1FC325A14AC300606EB6 /* Media.java in Sources */,
 				ACC54E5525A14653004320C7 /* LocationService.swift in Sources */,
+				AC74CB1D25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift in Sources */,
 				ACAE1FAB25A14AC300606EB6 /* JavaFunction.java in Sources */,
 				AC24108E25A3BA14006CD5F0 /* Log.swift in Sources */,
 				ACEEB30725A4F8ED007AC2BA /* CartridgePickerCell.swift in Sources */,
@@ -746,6 +785,7 @@
 				AC24109B25A3BAA1006CD5F0 /* UIViewExtensions.swift in Sources */,
 				ACAE1FAE25A14AC300606EB6 /* UpValue.java in Sources */,
 				ACAE1FC125A14AC300606EB6 /* FileHandle.java in Sources */,
+				AC74CB2025BD130900BA5877 /* UIImageViewExtensions.swift in Sources */,
 				ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
