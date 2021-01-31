@@ -12,14 +12,7 @@ struct CartridgePickerDisplayItem {
     let iconImage: UIImage
 
     init(cartidgeFile: WIGCartridgeFile) {
-        self.name = (cartidgeFile.value(forKey: "name_") as? String) ?? ""
-
-        if let iconId = cartidgeFile.value(forKey: "iconId_") as? Int32, iconId > 0,
-           let iconImageData = cartidgeFile.getWith(iconId).toNSData(),
-           let iconImage = UIImage(data: iconImageData) {
-            self.iconImage = iconImage
-        } else {
-            self.iconImage = UIImage(named: "WIGIcon")!
-        }
+        self.name = cartidgeFile.string(forKey: "name_") ?? ""
+        self.iconImage = cartidgeFile.image(for: "iconId_") ?? UIImage(named: "WIGIcon")!
     }
 }

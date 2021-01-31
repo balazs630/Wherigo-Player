@@ -17,4 +17,12 @@ extension WIGCartridgeFile {
 
         return image
     }
+
+    func string(forKey key: String) -> String? {
+        value(forKey: key) as? String
+    }
+
+    func double(forKey key: String) -> Double? {
+        value(forKey: key) as? Double
+    }
 }

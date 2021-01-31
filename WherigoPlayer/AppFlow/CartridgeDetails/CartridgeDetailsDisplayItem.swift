@@ -6,35 +6,37 @@
 //
 
 import UIKit
+import CoreLocation
 
 struct CartridgeDetailsDisplayItem {
     let name: String
     let description: String
+    let coordinate: CLLocationCoordinate2D
     let type: String
+    let device: String
+    let version: String
     let author: String
+    let member: String
     let iconImage: UIImage
     let splashImage: UIImage?
 
     init(cartidgeFile: WIGCartridgeFile) {
-        self.name = (cartidgeFile.value(forKey: "name_") as? String) ?? ""
-        self.description = (cartidgeFile.value(forKey: "description__") as? String) ?? ""
-        self.type = (cartidgeFile.value(forKey: "type_") as? String) ?? ""
-        self.author = (cartidgeFile.value(forKey: "author_") as? String) ?? ""
+        self.name = cartidgeFile.string(forKey: "name_") ?? ""
+        self.description = (cartidgeFile.string(forKey: "description__") ?? "")
+            .replacingOccurrences(of: "<BR>", with: "")
 
-        if let iconId = cartidgeFile.value(forKey: "iconId_") as? Int32, iconId > 0,
-           let iconImageData = cartidgeFile.getWith(iconId).toNSData(),
-           let iconImage = UIImage(data: iconImageData) {
-            self.iconImage = iconImage
-        } else {
-            self.iconImage = UIImage(named: "WIGIcon")!
-        }
+        self.coordinate = CLLocationCoordinate2D(
+            latitude: cartidgeFile.double(forKey: "latitude_") ?? 0,
+            longitude: cartidgeFile.double(forKey: "longitude_") ?? 0
+        )
 
-        if let splashId = cartidgeFile.value(forKey: "splashId_") as? Int32, splashId > 0,
-           let splashImageData = cartidgeFile.getWith(splashId).toNSData(),
-           let splashImage = UIImage(data: splashImageData) {
-            self.splashImage = splashImage
-        } else {
-            self.splashImage = nil
-        }
+        self.type = cartidgeFile.string(forKey: "type_") ?? ""
+        self.device = cartidgeFile.string(forKey: "device_") ?? ""
+        self.version = cartidgeFile.string(forKey: "version__") ?? ""
+        self.author = cartidgeFile.string(forKey: "author_") ?? ""
+        self.member = cartidgeFile.string(forKey: "member_") ?? ""
+
+        self.iconImage = cartidgeFile.image(for: "iconId_") ?? UIImage(named: "WIGIcon")!
+        self.splashImage = cartidgeFile.image(for: "splashId_")
     }
 }

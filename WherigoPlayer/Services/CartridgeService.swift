@@ -16,7 +16,10 @@ class CartridgeService {
             return WIGCartridgeFile.read(with: seekableFile, with: saveFile)
         }
     }
+}
 
+// MARK: Private methods
+extension CartridgeService {
     private static func wigFiles() -> [WIGFile] {
         gwcFileURLs().map { WIGFile(nsString: $0.path) }
     }
