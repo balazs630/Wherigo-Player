@@ -32,6 +32,7 @@
 		AC74CB1A25BB9FA200BA5877 /* CartridgeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB1925BB9FA200BA5877 /* CartridgeGameViewController.swift */; };
 		AC74CB1D25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB1C25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift */; };
 		AC74CB2025BD130900BA5877 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB1F25BD130900BA5877 /* UIImageViewExtensions.swift */; };
+		AC77E6EF25C7496D00BDF6E0 /* WIGCartridgeFileExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77E6EE25C7496D00BDF6E0 /* WIGCartridgeFileExtensions.swift */; };
 		ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */; };
 		ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */; };
 		ACAE1FA825A14AC300606EB6 /* WSaveFile.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1F7625A14AC200606EB6 /* WSaveFile.java */; };
@@ -109,7 +110,7 @@
 				"-fno-objc-arc",
 			);
 			runOncePerArchitecture = 0;
-			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]\nthen \n    echo \"J2OBJC_HOME not correctly defined in Build Settings, currently set to '${J2OBJC_HOME}'\"\n    exit 1\nfi\n\n\"${J2OBJC_HOME}/j2objc\" \\\n--swift-friendly \\\n--prefix 'menion.android.*=WIG' \\\n--prefix 'se.krka.*=WIG' \\\n--prefix 'cz.matejcik.*=WIG' \\\n-v -g -d ${DERIVED_FILE_DIR} -sourcepath \"${PROJECT_DIR}/WherigoCore/javasrc\" \\\n--no-package-directories ${INPUT_FILE_PATH};\n";
+			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]\nthen \n    echo \"J2OBJC_HOME not correctly defined in Build Settings, currently set to '${J2OBJC_HOME}'\"\n    exit 1\nfi\n\n\"${J2OBJC_HOME}/j2objc\" \\\n--swift-friendly \\\n--prefix 'menion.android.*=WIG' \\\n--prefix 'se.krka.*=WIG' \\\n--prefix 'cz.matejcik.*=WIG' \\\n-v -g -d ${DERIVED_FILE_DIR} -sourcepath \"${PROJECT_DIR}/WherigoCore/JavaSRC\" \\\n--no-package-directories ${INPUT_FILE_PATH};\n";
 		};
 /* End PBXBuildRule section */
 
@@ -139,6 +140,7 @@
 		AC74CB1925BB9FA200BA5877 /* CartridgeGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeGameViewController.swift; sourceTree = "<group>"; };
 		AC74CB1C25BBA24E00BA5877 /* CartridgeDetailsDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeDetailsDisplayItem.swift; sourceTree = "<group>"; };
 		AC74CB1F25BD130900BA5877 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		AC77E6EE25C7496D00BDF6E0 /* WIGCartridgeFileExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIGCartridgeFileExtensions.swift; sourceTree = "<group>"; };
 		ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		ACAE1F7525A14AC200606EB6 /* WSeekableFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSeekableFile.java; sourceTree = "<group>"; };
 		ACAE1F7625A14AC200606EB6 /* WSaveFile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WSaveFile.java; sourceTree = "<group>"; };
@@ -296,16 +298,25 @@
 			path = CartridgeGame;
 			sourceTree = "<group>";
 		};
+		AC77E6ED25C7494600BDF6E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC77E6EE25C7496D00BDF6E0 /* WIGCartridgeFileExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ACAE1F6C25A14A3B00606EB6 /* WherigoCore */ = {
 			isa = PBXGroup;
 			children = (
-				ACAE1F6D25A14AA600606EB6 /* javasrc */,
+				ACAE1F6D25A14AA600606EB6 /* JavaSRC */,
+				AC77E6ED25C7494600BDF6E0 /* Extensions */,
 				ACAE1F6E25A14AB900606EB6 /* TypeAlias.swift */,
 			);
 			path = WherigoCore;
 			sourceTree = "<group>";
 		};
-		ACAE1F6D25A14AA600606EB6 /* javasrc */ = {
+		ACAE1F6D25A14AA600606EB6 /* JavaSRC */ = {
 			isa = PBXGroup;
 			children = (
 				ACAE1F8C25A14AC300606EB6 /* cz */,
@@ -313,7 +324,7 @@
 				ACAE1F7725A14AC300606EB6 /* se */,
 				ACAE1FA525A14AC300606EB6 /* util */,
 			);
-			path = javasrc;
+			path = JavaSRC;
 			sourceTree = "<group>";
 		};
 		ACAE1F7125A14AC200606EB6 /* menion */ = {
@@ -720,6 +731,7 @@
 				AC2410A025A3BAD4006CD5F0 /* LoadingViewController.swift in Sources */,
 				ACAE1FB225A14AC300606EB6 /* LuaState.java in Sources */,
 				ACAE1FB825A14AC300606EB6 /* StringLib.java in Sources */,
+				AC77E6EF25C7496D00BDF6E0 /* WIGCartridgeFileExtensions.swift in Sources */,
 				ACEEB30425A4F707007AC2BA /* CartridgePickerDataSource.swift in Sources */,
 				AC2410BA25A3BEC2006CD5F0 /* BaseError.swift in Sources */,
 				ACAE1FC825A14AC300606EB6 /* Player.java in Sources */,
