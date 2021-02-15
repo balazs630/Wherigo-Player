@@ -77,6 +77,9 @@
                                                                 <real key="value" value="20"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="startButtonPressed:" destination="vGO-sI-aJV" eventType="touchUpInside" id="PeH-JT-TNT"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFe-oS-T2C">
                                                         <rect key="frame" x="126.5" y="0.0" width="112" height="40"/>
@@ -93,6 +96,9 @@
                                                                 <real key="value" value="20"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="resumeButtonPressed:" destination="vGO-sI-aJV" eventType="touchUpInside" id="nKe-ne-mz7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQu-Ad-N7M">
                                                         <rect key="frame" x="253.5" y="0.0" width="111.5" height="40"/>
@@ -109,6 +115,9 @@
                                                                 <real key="value" value="20"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="restartButtonPressed:" destination="vGO-sI-aJV" eventType="touchUpInside" id="H7C-yC-HYU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>

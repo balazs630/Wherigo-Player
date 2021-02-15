@@ -8,7 +8,7 @@
 import Foundation
 
 class CartridgeService {
-    static func cartridgeFiles() -> [WIGCartridgeFile] {
+    static var cartridgeFiles: [WIGCartridgeFile] {
         wigFiles().compactMap {
             let seekableFile = WIGSeekableFile(javaIoFile: $0)
             let saveFile = WIGSaveFile(javaIoFile: $0)
@@ -45,6 +45,10 @@ class CartridgeService {
     static func createLogOutputStream(for cartridgeFile: WIGCartridgeFile) -> WIGFileOutputStream {
         let owlFile = WIGFile(nsString: createOwlFileIfNecessary(for: cartridgeFile))
         return WIGFileOutputStream(javaIoFile: owlFile)
+    }
+
+    static func hasSavedPlay(for cartridgeFile: WIGCartridgeFile) -> Bool {
+        return false
     }
 }
 

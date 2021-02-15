@@ -43,7 +43,7 @@ class CartridgePickerViewController: UIViewController {
     }
 
     private func fetchCartridgeFiles() {
-        dataSource = CartridgePickerDataSource(items: CartridgeService.cartridgeFiles())
+        dataSource = CartridgePickerDataSource(items: CartridgeService.cartridgeFiles)
         cartridgeCollectionView.dataSource = dataSource
         addBarButton.isEnabled = !dataSource.items.isEmpty
     }

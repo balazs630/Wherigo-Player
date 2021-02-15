@@ -32,14 +32,28 @@ class CartridgeDetailsViewController: UIViewController {
     // MARK: Properties
     var cartridgeFile: WIGCartridgeFile!
     var displayItem: CartridgeDetailsDisplayItem!
-    var hasSavedGame: Bool {
-        return false
-    }
 
     // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSelf()
+    }
+
+    // MARK: Actions
+    @IBAction func startButtonPressed(_ sender: Any) {
+        let gameScreen = UIStoryboard.cartridgeGame
+            .instantiateViewController(CartridgeGameViewController.self)
+        gameScreen.cartridgeFile = cartridgeFile
+
+        navigationController?.pushViewController(gameScreen, animated: true)
+    }
+
+    @IBAction func resumeButtonPressed(_ sender: Any) {
+        // TODO: Button action
+    }
+
+    @IBAction func restartButtonPressed(_ sender: Any) {
+        // TODO: Button action
     }
 
     // MARK: Configuration
@@ -71,7 +85,7 @@ class CartridgeDetailsViewController: UIViewController {
     }
 
     private func configureButtons() {
-        if hasSavedGame {
+        if CartridgeService.hasSavedPlay(for: cartridgeFile) {
             resumeButton.setTitle(Texts.General.resume.localized, for: .normal)
             restartButton.setTitle(Texts.General.restart.localized, for: .normal)
             restartButton.setTitleColor(Theme.Color.blackTurnsWhite, for: .normal)
