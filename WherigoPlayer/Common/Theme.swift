@@ -10,6 +10,9 @@ import UIKit
 
 struct Theme {
     struct Color {
+        static var blackTurnsWhite: UIColor {
+            .init(light: .black, dark: .white)
+        }
     }
 
     struct Icon {

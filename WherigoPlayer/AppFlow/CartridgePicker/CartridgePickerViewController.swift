@@ -38,6 +38,7 @@ class CartridgePickerViewController: UIViewController {
 
     // MARK: Configuration
     private func configureSelf() {
+        configureNavigationBar()
         configureCartridgeCollectionView()
     }
 
@@ -45,6 +46,12 @@ class CartridgePickerViewController: UIViewController {
         dataSource = CartridgePickerDataSource(items: CartridgeService.cartridgeFiles())
         cartridgeCollectionView.dataSource = dataSource
         addBarButton.isEnabled = !dataSource.items.isEmpty
+    }
+
+    private func configureNavigationBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
     }
 
     private func configureCartridgeCollectionView() {

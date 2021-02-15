@@ -8,6 +8,13 @@
 
 struct Texts {
     enum General: String, Localizable {
-        case text
+        case cartridgeTypeLabel
+        case cartridgeVersion
+        case cartridgeDistance
+        case currentPlayer
+        case unknown
+        case start
+        case resume
+        case restart
     }
 }

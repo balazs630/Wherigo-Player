@@ -34,6 +34,17 @@ extension LocationService {
         locationManager.startUpdatingLocation()
     }
 
+    func distance(from coordinate: CLLocationCoordinate2D) -> String? {
+        let destinationLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        guard let distance = location?.distance(from: destinationLocation),
+              distance != 0
+        else {
+            return nil
+        }
+
+        return Locale.current.textualLengthRepresentation(of: distance)
+    }
+
     private func requestLocationPermission() {
         if !isAccessGranted() {
             locationManager.requestWhenInUseAuthorization()

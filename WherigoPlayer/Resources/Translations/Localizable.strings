@@ -6,4 +6,11 @@
   
 */
 
-"text" = "Text translation";
+"cartridgeTypeLabel" = "%@ by %@";
+"cartridgeVersion" = "Cartridge version:";
+"cartridgeDistance" = "Start approximately:";
+"currentPlayer" = "Current player is:";
+"unknown" = "unknown";
+"start" = "Start";
+"resume" = "Resume";
+"restart" = "Restart";
