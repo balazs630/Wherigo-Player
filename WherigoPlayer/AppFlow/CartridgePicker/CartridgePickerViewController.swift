@@ -22,6 +22,7 @@ class CartridgePickerViewController: UIViewController {
         configureSelf()
         fetchCartridgeFiles()
         presentEmptyViewIfNeeded()
+        LocationService.shared.startTracking()
     }
 
     // MARK: Actions
