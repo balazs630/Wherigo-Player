@@ -6,8 +6,6 @@
 //  Copyright © 2018. Horváth Balázs. All rights reserved.
 //
 
-import Foundation
-
 extension UserDefaults {
     func printAllUserDefaulsKeysAndValues() {
         UserDefaults.standard.dictionaryRepresentation().forEach { key, value in

@@ -6,8 +6,6 @@
 //  Copyright © 2018. Horváth Balázs. All rights reserved.
 //
 
-import Foundation
-
 extension String {
     func localized(tableName: String = "Localizable") -> String {
         return NSLocalizedString(self, tableName: tableName, value: "", comment: "")

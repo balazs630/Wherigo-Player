@@ -5,8 +5,6 @@
 //  Created by Balázs Horváth on 2021. 01. 05..
 //
 
-import Foundation
-
 class CartridgeService {
     static var cartridgeFiles: [WIGCartridgeFile] {
         wigFiles().compactMap {
@@ -23,7 +21,9 @@ class CartridgeService {
     }
 
     static func copyLuaStdLibIfNecessary() {
-        guard let documentsStdLibPath = try? FileManager.default
+        let fileManager = FileManager.default
+
+        guard let documentsStdLibPath = try? fileManager
             .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent(Constant.stdLibFileName)
             .appendingPathExtension(Constant.stdLibFileExtension)
@@ -32,13 +32,13 @@ class CartridgeService {
             return
         }
 
-        if !FileManager.default.fileExists(atPath: documentsStdLibPath) {
+        if !fileManager.fileExists(atPath: documentsStdLibPath) {
             let sourceStdLibPath = Bundle.main.path(
                 forResource: Constant.stdLibFileName,
                 ofType: Constant.stdLibFileExtension
             )!
 
-            try? FileManager.default.copyItem(atPath: sourceStdLibPath, toPath: documentsStdLibPath)
+            try? fileManager.copyItem(atPath: sourceStdLibPath, toPath: documentsStdLibPath)
         }
     }
 
@@ -73,8 +73,10 @@ extension CartridgeService {
     }
 
     private static func createOwlFileIfNecessary(for cartridgeFile: WIGCartridgeFile) -> String? {
+        let fileManager = FileManager.default
+
         guard let cartridgeFileName = cartridgeFileName(from: cartridgeFile),
-              let documentsOWLPath = try? FileManager.default
+              let documentsOWLPath = try? fileManager
                 .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
                 .appendingPathComponent(cartridgeFileName)
                 .appendingPathExtension(Constant.owlFileExtension)
@@ -83,8 +85,8 @@ extension CartridgeService {
             return nil
         }
 
-        if !FileManager.default.fileExists(atPath: documentsOWLPath) {
-            FileManager.default.createFile(atPath: documentsOWLPath, contents: nil)
+        if !fileManager.fileExists(atPath: documentsOWLPath) {
+            fileManager.createFile(atPath: documentsOWLPath, contents: nil)
         }
 
         return documentsOWLPath
