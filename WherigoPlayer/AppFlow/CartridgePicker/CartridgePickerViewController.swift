@@ -22,6 +22,8 @@ class CartridgePickerViewController: UIViewController {
         configureSelf()
         fetchCartridgeFiles()
         presentEmptyViewIfNeeded()
+
+        CartridgeService.copyLuaStdLibIfNecessary()
         LocationService.shared.startTracking()
     }
 
