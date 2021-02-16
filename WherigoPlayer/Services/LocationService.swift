@@ -45,6 +45,10 @@ extension LocationService {
         return Locale.current.textualLengthRepresentation(of: distance)
     }
 
+    func authorizationStatus() -> CLAuthorizationStatus {
+        CLLocationManager.authorizationStatus()
+    }
+
     private func requestLocationPermission() {
         if !isAccessGranted() {
             locationManager.requestWhenInUseAuthorization()
@@ -52,7 +56,7 @@ extension LocationService {
     }
 
     private func isAccessGranted() -> Bool {
-        switch CLLocationManager.authorizationStatus() {
+        switch authorizationStatus() {
         case .authorizedAlways, .authorizedWhenInUse:
             return true
         case .notDetermined, .restricted, .denied:
