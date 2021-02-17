@@ -27,7 +27,7 @@ class LocationService: NSObject {
     }
 }
 
-// MARK: Utility methods
+// MARK: Public methods
 extension LocationService {
     func startTracking() {
         requestLocationPermission()
@@ -49,6 +49,17 @@ extension LocationService {
         CLLocationManager.authorizationStatus()
     }
 
+    func locationAccuracy() -> Double? {
+        guard let horizontalAccuracy = location?.horizontalAccuracy, horizontalAccuracy > 0,
+              let verticalAccuracy = location?.verticalAccuracy, verticalAccuracy > 0
+        else { return nil }
+
+        return (horizontalAccuracy + verticalAccuracy) / 2
+    }
+}
+
+// MARK: Private methods
+extension LocationService {
     private func requestLocationPermission() {
         if !isAccessGranted() {
             locationManager.requestWhenInUseAuthorization()

@@ -28,15 +28,7 @@ class WIGLocationEventHandler: NSObject, WIGLocationServiceProtocol {
 
     func getPrecision() -> Double {
         Log.debug("getPrecision")
-        let horizontalAccuracy = LocationService.shared.location?.horizontalAccuracy ?? -1
-        let verticalAccuracy = LocationService.shared.location?.verticalAccuracy ?? -1
-
-        if horizontalAccuracy < 0 || verticalAccuracy < 0 {
-            // Precision data is not available, return with a big number until data is available
-            return 100
-        }
-
-        return (horizontalAccuracy + verticalAccuracy) / 2
+        return LocationService.shared.locationAccuracy() ?? 100
     }
 
     func getState() -> Int32 {
