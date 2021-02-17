@@ -46,6 +46,19 @@ class CartridgeGameViewController: UIViewController {
 
     private func cartridgeDidLoad() {
         Log.debug("cartridgeDidLoad()")
+
+        guard let cartridge = WIGEngine.instance.value(forKey: "cartridge_") as? WIGCartridge,
+              let zones = cartridge.value(forKey: "zones_") as? WIGVector,
+              let firstZone = zones.getWith(0) as? WIGZone,
+              let firstZoneDistance = firstZone.value(forKey: "distance_") as? Double
+        else { return }
+
+        Log.debug("Visible zone count: \(cartridge.visibleZones())")
+        Log.debug("Zones: \(zones)")
+        Log.debug("First zone: \(firstZone)")
+        Log.debug("First zone distance: \(firstZoneDistance)")
+
+        Log.debug("Done")
     }
 
     private func observeCartridgeLoading() {
