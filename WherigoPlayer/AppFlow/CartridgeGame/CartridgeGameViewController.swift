@@ -49,14 +49,23 @@ class CartridgeGameViewController: UIViewController {
 
         guard let cartridge = WIGEngine.instance.value(forKey: "cartridge_") as? WIGCartridge,
               let zones = cartridge.value(forKey: "zones_") as? WIGVector,
+              let tasks = cartridge.value(forKey: "tasks_") as? WIGVector,
+              let timers = cartridge.value(forKey: "timers_") as? WIGVector,
+              let actions = cartridge.value(forKey: "universalActions_") as? WIGVector,
+              let things = cartridge.value(forKey: "things_") as? WIGVector,
               let firstZone = zones.getWith(0) as? WIGZone,
               let firstZoneDistance = firstZone.value(forKey: "distance_") as? Double
         else { return }
 
-        Log.debug("Visible zone count: \(cartridge.visibleZones())")
         Log.debug("Zones: \(zones)")
-        Log.debug("First zone: \(firstZone)")
+        Log.debug("Visible zone count: \(cartridge.visibleZones())")
+        Log.debug("First zone name: \(firstZone)")
         Log.debug("First zone distance: \(firstZoneDistance)")
+
+        Log.debug("Tasks: \(tasks)")
+        Log.debug("Timers: \(timers)")
+        Log.debug("Actions: \(actions)")
+        Log.debug("Things: \(things)")
 
         Log.debug("Done")
     }
