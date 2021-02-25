@@ -74,6 +74,8 @@
 		ACAE1FCB25A14AC300606EB6 /* Action.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA325A14AC300606EB6 /* Action.java */; };
 		ACAE1FCC25A14AC300606EB6 /* Zone.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA425A14AC300606EB6 /* Zone.java */; };
 		ACAE1FCD25A14AC300606EB6 /* BackgroundRunner.java in Sources */ = {isa = PBXBuildFile; fileRef = ACAE1FA625A14AC300606EB6 /* BackgroundRunner.java */; };
+		ACBEC09725E7197A005DA50B /* QuestionInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBEC09625E7197A005DA50B /* QuestionInputViewController.swift */; };
+		ACBEC09A25E72012005DA50B /* QuestionInputDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBEC09925E72012005DA50B /* QuestionInputDisplayItem.swift */; };
 		ACC54E4825A14362004320C7 /* stdlib.lbc in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E4725A14362004320C7 /* stdlib.lbc */; };
 		ACC54E5525A14653004320C7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC54E5425A14653004320C7 /* LocationService.swift */; };
 		ACC54E5925A146F9004320C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACC54E5825A146F9004320C7 /* InfoPlist.strings */; };
@@ -183,6 +185,8 @@
 		ACAE1FA325A14AC300606EB6 /* Action.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Action.java; sourceTree = "<group>"; };
 		ACAE1FA425A14AC300606EB6 /* Zone.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Zone.java; sourceTree = "<group>"; };
 		ACAE1FA625A14AC300606EB6 /* BackgroundRunner.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = BackgroundRunner.java; sourceTree = "<group>"; };
+		ACBEC09625E7197A005DA50B /* QuestionInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInputViewController.swift; sourceTree = "<group>"; };
+		ACBEC09925E72012005DA50B /* QuestionInputDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInputDisplayItem.swift; sourceTree = "<group>"; };
 		ACC54E3725A141D7004320C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ACC54E3A25A1420F004320C7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		ACC54E3D25A14237004320C7 /* WherigoPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WherigoPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -295,6 +299,7 @@
 		AC74CB1425BB9E8A00BA5877 /* CartridgeGame */ = {
 			isa = PBXGroup;
 			children = (
+				ACBEC09C25E72186005DA50B /* QuestionInput */,
 				AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */,
 				AC74CB1925BB9FA200BA5877 /* CartridgeGameViewController.swift */,
 			);
@@ -483,6 +488,15 @@
 				ACAE1FA625A14AC300606EB6 /* BackgroundRunner.java */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		ACBEC09C25E72186005DA50B /* QuestionInput */ = {
+			isa = PBXGroup;
+			children = (
+				ACBEC09925E72012005DA50B /* QuestionInputDisplayItem.swift */,
+				ACBEC09625E7197A005DA50B /* QuestionInputViewController.swift */,
+			);
+			path = QuestionInput;
 			sourceTree = "<group>";
 		};
 		ACC54E1D25A13A83004320C7 /* AppFlow */ = {
@@ -738,6 +752,7 @@
 				ACEEB30425A4F707007AC2BA /* CartridgePickerDataSource.swift in Sources */,
 				AC2410BA25A3BEC2006CD5F0 /* BaseError.swift in Sources */,
 				ACAE1FC825A14AC300606EB6 /* Player.java in Sources */,
+				ACBEC09725E7197A005DA50B /* QuestionInputViewController.swift in Sources */,
 				ACEEB31B25A51FB4007AC2BA /* UICollectionViewExtensions.swift in Sources */,
 				ACAE1FC025A14AC300606EB6 /* LocationService.java in Sources */,
 				AC24109825A3BA8A006CD5F0 /* UIViewControllerExtensions.swift in Sources */,
@@ -764,6 +779,7 @@
 				ACAE1FA725A14AC300606EB6 /* WSeekableFile.java in Sources */,
 				AC2410B425A3BE81006CD5F0 /* Localizable.swift in Sources */,
 				ACAE1FBE25A14AC300606EB6 /* SeekableFile.java in Sources */,
+				ACBEC09A25E72012005DA50B /* QuestionInputDisplayItem.swift in Sources */,
 				ACF3379B25A3F17C00248C5B /* FileManagerExtensions.swift in Sources */,
 				ACAE1FC325A14AC300606EB6 /* Media.java in Sources */,
 				ACC54E5525A14653004320C7 /* LocationService.swift in Sources */,

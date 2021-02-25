@@ -48,8 +48,8 @@ class WIGUIEventHandler: NSObject, WIGUIProtocol {
         """)
     }
 
-    func pushInput(with input: WIGEventTable!) {
-        Log.debug("pushInput with input: \(String(describing: input))")
+    func pushInput(with eventTable: WIGEventTable!) {
+        Log.debug("pushInput with input: \(QuestionInputDisplayItem(eventTable: eventTable)))")
     }
 
     func showScreen(with screenId: Int32, with details: WIGEventTable!) {
