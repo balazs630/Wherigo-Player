@@ -16,13 +16,79 @@
                     <view key="view" contentMode="scaleToFill" id="D9m-xc-aUS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nz6-aQ-FsQ">
+                                <rect key="frame" x="184.5" y="437.5" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LBI-8h-R4b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nz6-aQ-FsQ" firstAttribute="centerX" secondItem="D9m-xc-aUS" secondAttribute="centerX" id="8kD-JR-IvA"/>
+                            <constraint firstItem="nz6-aQ-FsQ" firstAttribute="centerY" secondItem="D9m-xc-aUS" secondAttribute="centerY" id="NNO-wn-Fns"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDm-f3-n3L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-413" y="181"/>
+        </scene>
+        <!--Free Text Question View Controller-->
+        <scene sceneID="SwB-cc-9Ng">
+            <objects>
+                <viewController storyboardIdentifier="FreeTextQuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kH9-Q9-tfD" customClass="FreeTextQuestionViewController" customModule="WherigoPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mV9-Cf-r5W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-gM-LmF">
+                                <rect key="frame" x="173.5" y="437.5" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P9X-6f-9fd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8hi-gM-LmF" firstAttribute="centerX" secondItem="mV9-Cf-r5W" secondAttribute="centerX" id="TJH-Qr-k9C"/>
+                            <constraint firstItem="8hi-gM-LmF" firstAttribute="centerY" secondItem="mV9-Cf-r5W" secondAttribute="centerY" id="dPS-Yp-dPH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGS-VP-epw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="181"/>
+        </scene>
+        <!--Multiple Choice Question View Controller-->
+        <scene sceneID="box-0e-Y70">
+            <objects>
+                <viewController storyboardIdentifier="MultipleChoiceQuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pdb-rk-uHY" customClass="MultipleChoiceQuestionViewController" customModule="WherigoPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b72-aV-Z9w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emm-oq-sZf">
+                                <rect key="frame" x="149" y="437.5" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EiT-3m-HJ4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="emm-oq-sZf" firstAttribute="centerX" secondItem="b72-aV-Z9w" secondAttribute="centerX" id="7MZ-iD-pVQ"/>
+                            <constraint firstItem="emm-oq-sZf" firstAttribute="centerY" secondItem="b72-aV-Z9w" secondAttribute="centerY" id="WKA-eA-LFH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyU-pt-LzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="181"/>
         </scene>
     </scenes>
     <resources>

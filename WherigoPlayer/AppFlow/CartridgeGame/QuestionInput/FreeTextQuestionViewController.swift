@@ -1,5 +1,5 @@
 //
-//  QuestionInputViewController.swift
+//  FreeTextQuestionViewController.swift
 //  WherigoPlayer
 //
 //  Created by Balázs Horváth on 2021. 02. 25..
@@ -7,11 +7,13 @@
 
 import UIKit
 
-class QuestionInputViewController: UIViewController {
-    var questionDisplayItem: QuestionInputDisplayItem!
+class FreeTextQuestionViewController: UIViewController {
+    var displayItem: QuestionInputDisplayItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        Log.debug("present free text input screen: \(String(describing: displayItem))")
         // WIGEngine.callEvent(with: input, with: "OnGetInput", withId: "en")
     }
 }
