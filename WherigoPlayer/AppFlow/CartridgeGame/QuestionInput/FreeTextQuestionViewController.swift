@@ -14,6 +14,6 @@ class FreeTextQuestionViewController: UIViewController {
         super.viewDidLoad()
 
         Log.debug("present free text input screen: \(String(describing: displayItem))")
-        // WIGEngine.callEvent(with: input, with: "OnGetInput", withId: "en")
+        // WIGEngine.callEvent(with: displayItem.eventTable, with: "OnGetInput", withId: "en")
     }
 }

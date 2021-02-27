@@ -5,7 +5,12 @@
 //  Created by Balázs Horváth on 2020. 12. 30..
 //
 
-class WIGUIEventHandler: NSObject, WIGUIProtocol {
+class WIGUIEventHandler: NSObject {
+    var didPushQuestion: ((QuestionInputDisplayItem) -> Void)?
+}
+
+// MARK: WIGUIProtocol methods
+extension WIGUIEventHandler: WIGUIProtocol {
     func refresh() {
         Log.debug("refresh")
     }
@@ -49,7 +54,9 @@ class WIGUIEventHandler: NSObject, WIGUIProtocol {
     }
 
     func pushInput(with eventTable: WIGEventTable!) {
-        Log.debug("pushInput with input: \(QuestionInputDisplayItem(eventTable: eventTable)))")
+        Log.debug("pushInput with eventTable")
+        let displayItem = QuestionInputDisplayItem(eventTable: eventTable)
+        didPushQuestion?(displayItem)
     }
 
     func showScreen(with screenId: Int32, with details: WIGEventTable!) {
