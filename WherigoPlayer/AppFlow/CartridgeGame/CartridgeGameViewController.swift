@@ -9,7 +9,6 @@ import UIKit
 
 class CartridgeGameViewController: UIViewController {
     // MARK: Properties
-    private weak var enginePollingTimer: Timer?
     private lazy var uiEventHandler = WIGUIEventHandler()
     private lazy var locationEventHandler = WIGLocationEventHandler()
 
@@ -23,46 +22,24 @@ class CartridgeGameViewController: UIViewController {
     }
 
     deinit {
-        enginePollingTimer?.invalidate()
-        WIGEngine.kill()
+        CartridgeService.stopWIGEngine()
     }
 
     // MARK: Setup Game
     private func startGameEngine() {
-        Log.debug("startGame")
-
-        let logOutputStream = CartridgeService.createLogOutputStream(for: cartridgeFile)
-
-        guard let engine = WIGEngine.newInstance(
-            with: cartridgeFile,
-            with: logOutputStream,
-            with: uiEventHandler,
-            with: locationEventHandler
-        ) else {
-            return
-        }
-
-        engine.start()
-        observeCartridgeLoading()
-    }
-
-    private func observeCartridgeLoading() {
-        enginePollingTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { [unowned self] _ in
-            // Starting engine takes time, we're polling when it's ready for use
-            guard WIGEngine.instance.value(forKey: "cartridge_") as? WIGCartridge != nil,
-                  LocationService.shared.location != nil
-            else { return }
-
-            self.enginePollingTimer?.invalidate()
-            self.cartridgeDidLoad()
+        CartridgeService.startWIGEngine(
+            cartridgeFile: cartridgeFile,
+            uiEventHandler: uiEventHandler,
+            locationEventHandler: locationEventHandler
+        ) { [weak self] cartridge in
+            self?.engineDidLoad(with: cartridge)
         }
     }
 
-    private func cartridgeDidLoad() {
-        Log.debug("cartridgeDidLoad()")
+    private func engineDidLoad(with cartridge: WIGCartridge) {
+        Log.debug("engineDidLoad")
 
-        guard let cartridge = WIGEngine.instance.value(forKey: "cartridge_") as? WIGCartridge,
-              let zones = cartridge.value(forKey: "zones_") as? WIGVector,
+        guard let zones = cartridge.value(forKey: "zones_") as? WIGVector,
               let tasks = cartridge.value(forKey: "tasks_") as? WIGVector,
               let timers = cartridge.value(forKey: "timers_") as? WIGVector,
               let actions = cartridge.value(forKey: "universalActions_") as? WIGVector,

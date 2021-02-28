@@ -42,9 +42,42 @@ class CartridgeService {
         }
     }
 
+    static func startWIGEngine(
+        cartridgeFile: WIGCartridgeFile,
+        uiEventHandler: WIGUIEventHandler,
+        locationEventHandler: WIGLocationEventHandler,
+        completion: @escaping (WIGCartridge) -> Void
+    ) {
+        let logOutputStream = createLogOutputStream(for: cartridgeFile)
+
+        guard let engine = WIGEngine.newInstance(
+            with: cartridgeFile,
+            with: logOutputStream,
+            with: uiEventHandler,
+            with: locationEventHandler
+        ) else {
+            return
+        }
+
+        engine.start()
+
+        var enginePollingTimer: Timer?
+        enginePollingTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+            // Starting engine takes time, we're polling when it's ready for use
+            guard let cartridge = WIGEngine.instance.value(forKey: "cartridge_") as? WIGCartridge else { return }
+
+            enginePollingTimer?.invalidate()
+            completion(cartridge)
+        }
+    }
+
     static func createLogOutputStream(for cartridgeFile: WIGCartridgeFile) -> WIGFileOutputStream {
         let owlFile = WIGFile(nsString: createOwlFileIfNecessary(for: cartridgeFile))
         return WIGFileOutputStream(javaIoFile: owlFile)
+    }
+
+    static func stopWIGEngine() {
+        WIGEngine.kill()
     }
 
     static func hasSavedPlay(for cartridgeFile: WIGCartridgeFile) -> Bool {
