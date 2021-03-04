@@ -16,7 +16,6 @@ struct QuestionInputDisplayItem {
     let eventTable: WIGEventTable
     let inputType: QuestionInputType?
     let question: String?
-    let media: UIImage?
     let choices: [String]?
 
     init(eventTable: WIGEventTable) {
@@ -25,14 +24,18 @@ struct QuestionInputDisplayItem {
         let rawInputType = eventTable.rawget(withId: "InputType") as? String
         self.inputType = QuestionInputType(rawValue: rawInputType ?? "")
 
-        self.question = eventTable.rawget(withId: "Text") as? String
+        self.question = (eventTable.rawget(withId: "Text") as? String)?
+            .replacingOccurrences(of: "<BR>", with: "")
 
-        if let mediaData = eventTable.rawget(withId: "Media") as? Data {
-            media = UIImage(data: mediaData)
+        if let choicesTable = eventTable.rawget(withId: "Choices") as? WIGLuaTableImpl {
+            var choices = [String]()
+            for index in 1...choicesTable.len() {
+                choices.append((choicesTable.rawget(with: jint(index)) as? String) ?? "-")
+            }
+
+            self.choices = choices
         } else {
-            media = nil
+            self.choices = []
         }
-
-        self.choices = eventTable.rawget(withId: "Choices") as? [String]
     }
 }
