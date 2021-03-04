@@ -16,5 +16,6 @@ struct Texts {
         case start
         case resume
         case restart
+        case done
     }
 }
