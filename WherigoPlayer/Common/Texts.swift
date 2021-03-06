@@ -7,12 +7,22 @@
 //
 
 struct Texts {
-    enum General: String, Localizable {
+    enum Import: String, Localizable {
+        case browseCartridgesStep
+        case downloadCartridgeStep
+        case cartridgeFileTypeStep
+        case importCartridgeStep
+    }
+
+    enum Cartridge: String, Localizable {
         case cartridgeTypeLabel
         case cartridgeVersion
         case cartridgeDistance
         case currentPlayer
         case unknown
+    }
+
+    enum General: String, Localizable {
         case start
         case resume
         case restart

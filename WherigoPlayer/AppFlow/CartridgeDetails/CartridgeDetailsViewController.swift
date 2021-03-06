@@ -66,19 +66,19 @@ class CartridgeDetailsViewController: UIViewController {
     private func configureTexts() {
         titleLabel.text = displayItem.name
         subTitleLabel.text = !displayItem.author.isEmpty
-            ? Texts.General.cartridgeTypeLabel.localizedWithParameter(displayItem.type, displayItem.author)
+            ? Texts.Cartridge.cartridgeTypeLabel.localizedWithParameter(displayItem.type, displayItem.author)
             : displayItem.type
 
-        cartridgeVersionDescriptionLabel.text = Texts.General.cartridgeVersion.localized
+        cartridgeVersionDescriptionLabel.text = Texts.Cartridge.cartridgeVersion.localized
         cartridgeVersionLabel.text = displayItem.version
 
-        cartridgeDistanceDescriptionLabel.text = Texts.General.cartridgeDistance.localized
+        cartridgeDistanceDescriptionLabel.text = Texts.Cartridge.cartridgeDistance.localized
         let distance = LocationService.shared.distance(from: displayItem.coordinate)
         cartridgeDistanceLabel.text = distance != nil
             ? distance
-            : Texts.General.unknown.localized
+            : Texts.Cartridge.unknown.localized
 
-        cartridgeCurrentPlayerDescriptionLabel.text = Texts.General.currentPlayer.localized
+        cartridgeCurrentPlayerDescriptionLabel.text = Texts.Cartridge.currentPlayer.localized
         cartridgeCurrentPlayerLabel.text = displayItem.member
 
         descriptionLabel.text = displayItem.description

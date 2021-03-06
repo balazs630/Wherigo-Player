@@ -6,11 +6,20 @@
   
 */
 
+// Import guide screen
+"browseCartridgesStep" = "1.) <b>Browse</b> nearby <b>cartridges</b> on wherigo.com";
+"downloadCartridgeStep" = "2.) <b>Sign in</b>, and download the selected Wherigo game";
+"cartridgeFileTypeStep" = "3.) At download page select <b>Pocket PC Device</b>";
+"importCartridgeStep" = "4.) <b>Import</b> the downloaded cartridge down below";
+
+// Details screen
 "cartridgeTypeLabel" = "%@ by %@";
 "cartridgeVersion" = "Cartridge version:";
 "cartridgeDistance" = "Start approximately:";
 "currentPlayer" = "Current player is:";
 "unknown" = "unknown";
+
+// General
 "start" = "Start";
 "resume" = "Resume";
 "restart" = "Restart";
