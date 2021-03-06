@@ -43,7 +43,6 @@ class MultipleChoiceQuestionViewController: UIViewController {
         answerPickerView.delegate = self
         answerPickerView.dataSource = self
         doneButton.setTitle(Texts.General.done.localized, for: .normal)
-        doneButton.setTitleColor(Theme.Color.blackTurnsWhite, for: .normal)
     }
 }
 

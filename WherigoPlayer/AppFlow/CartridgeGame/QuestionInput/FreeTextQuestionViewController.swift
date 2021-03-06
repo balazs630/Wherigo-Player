@@ -44,7 +44,6 @@ class FreeTextQuestionViewController: UIViewController {
 
         questionLabel.text = displayItem.question
         doneButton.setTitle(Texts.General.done.localized, for: .normal)
-        doneButton.setTitleColor(Theme.Color.blackTurnsWhite, for: .normal)
     }
 
     // MARK: Keyboard events

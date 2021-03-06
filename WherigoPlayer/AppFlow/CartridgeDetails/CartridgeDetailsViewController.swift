@@ -88,7 +88,6 @@ class CartridgeDetailsViewController: UIViewController {
         if CartridgeService.hasSavedPlay(for: cartridgeFile) {
             resumeButton.setTitle(Texts.General.resume.localized, for: .normal)
             restartButton.setTitle(Texts.General.restart.localized, for: .normal)
-            restartButton.setTitleColor(Theme.Color.blackTurnsWhite, for: .normal)
             startButton.isHidden = true
         } else {
             startButton.setTitle(Texts.General.start.localized, for: .normal)
