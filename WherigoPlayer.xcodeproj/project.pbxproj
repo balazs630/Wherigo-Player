@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC15EB4325DB1DF1001BAB19 /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15EB4225DB1DF1001BAB19 /* LocaleExtensions.swift */; };
+		AC1DED3725F418FC006A5BDA /* NSAttributesStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DED3625F418FC006A5BDA /* NSAttributesStringExtension.swift */; };
 		AC24108E25A3BA14006CD5F0 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24108D25A3BA14006CD5F0 /* Log.swift */; };
 		AC24109225A3BA4E006CD5F0 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */; };
 		AC24109525A3BA5E006CD5F0 /* UIResponderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109425A3BA5E006CD5F0 /* UIResponderExtensions.swift */; };
@@ -15,7 +16,6 @@
 		AC24109B25A3BAA1006CD5F0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109A25A3BAA1006CD5F0 /* UIViewExtensions.swift */; };
 		AC2410A025A3BAD4006CD5F0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24109F25A3BAD4006CD5F0 /* LoadingViewController.swift */; };
 		AC2410A625A3BB46006CD5F0 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410A525A3BB46006CD5F0 /* UIStoryboardExtensions.swift */; };
-		AC2410A925A3BB7E006CD5F0 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */; };
 		AC2410AC25A3BBAE006CD5F0 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410AB25A3BBAE006CD5F0 /* UITableViewExtensions.swift */; };
 		AC2410AF25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410AE25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift */; };
 		AC2410B425A3BE81006CD5F0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2410B325A3BE81006CD5F0 /* Localizable.swift */; };
@@ -120,6 +120,7 @@
 
 /* Begin PBXFileReference section */
 		AC15EB4225DB1DF1001BAB19 /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
+		AC1DED3625F418FC006A5BDA /* NSAttributesStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributesStringExtension.swift; sourceTree = "<group>"; };
 		AC24108D25A3BA14006CD5F0 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		AC24109425A3BA5E006CD5F0 /* UIResponderExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIResponderExtensions.swift; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		AC24109A25A3BAA1006CD5F0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		AC24109F25A3BAD4006CD5F0 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		AC2410A525A3BB46006CD5F0 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
-		AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		AC2410AB25A3BBAE006CD5F0 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		AC2410AE25A3BBCC006CD5F0 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
 		AC2410B325A3BE81006CD5F0 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -238,8 +238,8 @@
 			children = (
 				ACF3379A25A3F17C00248C5B /* FileManagerExtensions.swift */,
 				AC15EB4225DB1DF1001BAB19 /* LocaleExtensions.swift */,
+				AC1DED3625F418FC006A5BDA /* NSAttributesStringExtension.swift */,
 				AC2410B625A3BE9D006CD5F0 /* StringExtensions.swift */,
-				AC2410A825A3BB7E006CD5F0 /* UIApplicationExtensions.swift */,
 				ACEEB31A25A51FB4007AC2BA /* UICollectionViewExtensions.swift */,
 				AC24109125A3BA4E006CD5F0 /* UIColorExtensions.swift */,
 				AC74CB1F25BD130900BA5877 /* UIImageViewExtensions.swift */,
@@ -800,6 +800,7 @@
 				ACAE1FBC25A14AC300606EB6 /* CartridgeFile.java in Sources */,
 				ACAE1FB725A14AC300606EB6 /* BaseLib.java in Sources */,
 				ACAE1FCB25A14AC300606EB6 /* Action.java in Sources */,
+				AC1DED3725F418FC006A5BDA /* NSAttributesStringExtension.swift in Sources */,
 				ACAE1FBD25A14AC300606EB6 /* EventTable.java in Sources */,
 				ACAE1FAF25A14AC300606EB6 /* LuaThread.java in Sources */,
 				ACAE1FC525A14AC300606EB6 /* Container.java in Sources */,
@@ -815,7 +816,6 @@
 				ACAE1FCC25A14AC300606EB6 /* Zone.java in Sources */,
 				ACAE1FB125A14AC300606EB6 /* LuaClosure.java in Sources */,
 				ACAE1F6F25A14AB900606EB6 /* TypeAlias.swift in Sources */,
-				AC2410A925A3BB7E006CD5F0 /* UIApplicationExtensions.swift in Sources */,
 				ACAE1FCA25A14AC300606EB6 /* Task.java in Sources */,
 				ACEEB31425A51B30007AC2BA /* CartridgeService.swift in Sources */,
 				AC24109B25A3BAA1006CD5F0 /* UIViewExtensions.swift in Sources */,

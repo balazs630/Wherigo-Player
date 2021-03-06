@@ -7,6 +7,7 @@
 //
 
 struct Constant {
+    static let wherigoURL = URL(string: "https://www.wherigo.com/")!
     static let cartridgeDocumentTypeIdentifier = "com.pisoft.Wherigo.gwc"
 
     static let stdLibFileName = "stdlib"

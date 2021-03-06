@@ -62,25 +62,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16w-gF-lId">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Import"/>
-                                <connections>
-                                    <action selector="importButtonPressed:" destination="WQq-SO-qn9" eventType="touchUpInside" id="F2e-ge-VBc"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-1t-IOJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBw-lF-ORI" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="437"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYQ-1U-war">
+                                                <rect key="frame" x="107" y="357" width="200" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="JTR-qu-AhF"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Ujh-hO-7XH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <state key="normal" title="Import">
+                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="importButtonPressed:" destination="WQq-SO-qn9" eventType="touchUpInside" id="pCp-HK-n7w"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zzb-Jb-rgP">
+                                                <rect key="frame" x="57" y="190" width="300" height="127"/>
+                                                <subviews>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmH-S4-vj1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
+                                                        <gestureRecognizers/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="C1M-ik-ErV" appends="YES" id="1a1-BP-Fl9"/>
+                                                        </connections>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctc-yV-cmU">
+                                                        <rect key="frame" x="0.0" y="35.5" width="300" height="20.5"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbc-N6-pc5">
+                                                        <rect key="frame" x="0.0" y="71" width="300" height="20.5"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 4" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHz-W8-Z0K">
+                                                        <rect key="frame" x="0.0" y="106.5" width="300" height="20.5"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Adf-QF-JyS"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WIGIcon" translatesAutoresizingMaskIntoConstraints="NO" id="SRP-Iw-SS5">
+                                                <rect key="frame" x="157" y="50" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="EJP-UV-F0Z"/>
+                                                    <constraint firstAttribute="height" constant="100" id="hyB-f0-VEY"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Zzb-Jb-rgP" firstAttribute="top" secondItem="SRP-Iw-SS5" secondAttribute="bottom" constant="40" id="SKp-wv-FBA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zzb-Jb-rgP" secondAttribute="trailing" priority="999" constant="20" id="ShJ-7Q-Qcp"/>
+                                            <constraint firstItem="YYQ-1U-war" firstAttribute="top" secondItem="Zzb-Jb-rgP" secondAttribute="bottom" constant="40" id="ebF-XC-VMa"/>
+                                            <constraint firstItem="Zzb-Jb-rgP" firstAttribute="leading" secondItem="wBw-lF-ORI" secondAttribute="leading" priority="999" constant="20" id="feW-lo-Isg"/>
+                                            <constraint firstAttribute="bottom" secondItem="YYQ-1U-war" secondAttribute="bottom" constant="40" id="ftX-Ji-pNY"/>
+                                            <constraint firstItem="Zzb-Jb-rgP" firstAttribute="centerX" secondItem="wBw-lF-ORI" secondAttribute="centerX" id="w63-gw-o9Q"/>
+                                            <constraint firstItem="SRP-Iw-SS5" firstAttribute="centerX" secondItem="wBw-lF-ORI" secondAttribute="centerX" id="xZQ-a7-GKf"/>
+                                            <constraint firstItem="YYQ-1U-war" firstAttribute="centerX" secondItem="wBw-lF-ORI" secondAttribute="centerX" id="yAQ-r2-yzO"/>
+                                            <constraint firstItem="SRP-Iw-SS5" firstAttribute="top" secondItem="wBw-lF-ORI" secondAttribute="top" constant="50" id="zuV-tb-AeK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wBw-lF-ORI" firstAttribute="bottom" secondItem="Cvk-6P-T2K" secondAttribute="bottom" id="Ks5-LN-KX7"/>
+                                    <constraint firstItem="wBw-lF-ORI" firstAttribute="leading" secondItem="Cvk-6P-T2K" secondAttribute="leading" id="Omg-4N-QUo"/>
+                                    <constraint firstItem="wBw-lF-ORI" firstAttribute="top" secondItem="Cvk-6P-T2K" secondAttribute="top" id="eDi-Vc-MnT"/>
+                                    <constraint firstItem="wBw-lF-ORI" firstAttribute="width" secondItem="vaO-Ry-wyb" secondAttribute="width" id="hn4-ft-SIz"/>
+                                    <constraint firstItem="wBw-lF-ORI" firstAttribute="trailing" secondItem="Cvk-6P-T2K" secondAttribute="trailing" id="lkh-UF-JE5"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Cvk-6P-T2K"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vaO-Ry-wyb"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x8G-2K-eEY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="16w-gF-lId" firstAttribute="centerX" secondItem="3hr-3r-XZS" secondAttribute="centerX" id="dOP-Fz-8oL"/>
-                            <constraint firstItem="16w-gF-lId" firstAttribute="centerY" secondItem="3hr-3r-XZS" secondAttribute="centerY" id="yhJ-Tj-PWc"/>
+                            <constraint firstItem="u1u-1t-IOJ" firstAttribute="trailing" secondItem="x8G-2K-eEY" secondAttribute="trailing" id="Fay-VD-Lfg"/>
+                            <constraint firstItem="u1u-1t-IOJ" firstAttribute="leading" secondItem="x8G-2K-eEY" secondAttribute="leading" id="GDA-sf-wSE"/>
+                            <constraint firstItem="u1u-1t-IOJ" firstAttribute="top" secondItem="x8G-2K-eEY" secondAttribute="top" id="huG-WG-IKq"/>
+                            <constraint firstAttribute="bottom" secondItem="u1u-1t-IOJ" secondAttribute="bottom" id="zNg-Q6-61A"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="browseCartridgesLabel" destination="VmH-S4-vj1" id="tGQ-mx-Qau"/>
+                        <outlet property="cartridgeFileTypeLabel" destination="Zbc-N6-pc5" id="b2W-i7-w1F"/>
+                        <outlet property="downloadCartridgeLabel" destination="Ctc-yV-cmU" id="P66-NH-JII"/>
+                        <outlet property="importCartridgeLabel" destination="KHz-W8-Z0K" id="xBc-pg-Tmi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zXb-mv-ynb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="C1M-ik-ErV">
+                    <connections>
+                        <action selector="wherigoLinkPressed:" destination="WQq-SO-qn9" id="ESB-qb-BJ7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2462" y="100"/>
+            <point key="canvasLocation" x="2250.7246376811595" y="99.776785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7K8-ug-9dj">
@@ -102,8 +203,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="WIGIcon" width="221" height="230"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
