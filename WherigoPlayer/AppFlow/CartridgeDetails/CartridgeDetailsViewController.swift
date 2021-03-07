@@ -101,9 +101,12 @@ class CartridgeDetailsViewController: UIViewController {
         iconImageView.layer.cornerRadius = 20
         iconImageView.image = displayItem.iconImage
 
-        splashImageView.image = displayItem.splashImage
-        splashImageHeightConstraint.constant = displayItem.splashImage != nil
-            ? splashImageView.contentClippingRect.height
-            : 0
+        guard let image = displayItem.splashImage else {
+            splashImageView.isHidden = true
+            return
+        }
+
+        splashImageView.image = image
+        splashImageHeightConstraint.constant = splashImageView.contentClippingRect.height
     }
 }
