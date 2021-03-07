@@ -29,6 +29,7 @@
 		AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */; };
 		AC58B65025F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58B64F25F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift */; };
 		AC58B65325F4F54C007D3CAF /* QuestionDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58B65225F4F54C007D3CAF /* QuestionDialogViewController.swift */; };
+		AC58B65625F562AF007D3CAF /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58B65525F562AF007D3CAF /* AudioService.swift */; };
 		AC74CB0D25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB0C25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift */; };
 		AC74CB1125BB9C9600BA5877 /* CartridgeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74CB1025BB9C9600BA5877 /* CartridgeDetails.storyboard */; };
 		AC74CB1725BB9F9000BA5877 /* CartridgeGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */; };
@@ -143,6 +144,7 @@
 		AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGUIEventHandler.swift; sourceTree = "<group>"; };
 		AC58B64F25F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDialogDisplayItem.swift; sourceTree = "<group>"; };
 		AC58B65225F4F54C007D3CAF /* QuestionDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDialogViewController.swift; sourceTree = "<group>"; };
+		AC58B65525F562AF007D3CAF /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		AC74CB0C25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeDetailsViewController.swift; sourceTree = "<group>"; };
 		AC74CB1025BB9C9600BA5877 /* CartridgeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartridgeDetails.storyboard; sourceTree = "<group>"; };
 		AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartridgeGame.storyboard; sourceTree = "<group>"; };
@@ -530,8 +532,9 @@
 		ACC54E1E25A13AA2004320C7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				ACC54E5425A14653004320C7 /* LocationService.swift */,
+				AC58B65525F562AF007D3CAF /* AudioService.swift */,
 				ACEEB31325A51B30007AC2BA /* CartridgeService.swift */,
+				ACC54E5425A14653004320C7 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -790,6 +793,7 @@
 				AC74CB0D25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift in Sources */,
 				ACAE1FA925A14AC300606EB6 /* LuaPrototype.java in Sources */,
 				AC2410B725A3BE9D006CD5F0 /* StringExtensions.swift in Sources */,
+				AC58B65625F562AF007D3CAF /* AudioService.swift in Sources */,
 				ACAE1FB625A14AC300606EB6 /* TableLib.java in Sources */,
 				ACAE1FBA25A14AC300606EB6 /* WherigoLib.java in Sources */,
 				AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */,
