@@ -7,6 +7,7 @@
 
 class WIGUIEventHandler: NSObject {
     var didPushQuestion: ((QuestionInputDisplayItem) -> Void)?
+    var didPushDialog: ((QuestionDialogDisplayItem) -> Void)?
 }
 
 // MARK: WIGUIProtocol methods
@@ -24,47 +25,47 @@ extension WIGUIEventHandler: WIGUIProtocol {
         Log.debug("end")
     }
 
-    func showError(with message: String!) {
+    func showError(with message: String) {
         Log.debug("showError with message: \(String(describing: message))")
     }
 
-    func debugMsg(with message: String!) {
+    func debugMsg(with message: String) {
         Log.debug("debugMsg with message: \(String(describing: message))")
     }
 
-    func setStatusTextWith(_ text: String!) {
-        Log.debug("setStatusTextWith text: \(String(describing: text))")
+    func setStatusTextWith(_ text: String) {
+        Log.debug("setStatusTextWith")
     }
 
     func pushDialog(
-        withNSStringArray texts: IOSObjectArray!,
-        withWIGMediaArray media: IOSObjectArray!,
-        with button1: String!,
-        with button2: String!,
-        with dismissCallback: WIGLuaClosure!
+        withNSStringArray texts: IOSObjectArray,
+        withWIGMediaArray media: IOSObjectArray,
+        with primaryButtonTitle: String,
+        with secondaryButtonTitle: String,
+        with callback: WIGLuaClosure
     ) {
-        Log.debug("""
-            pushDialog
-                withNSStringArray texts: \(String(describing: texts)),
-                withWIGMediaArray media: \(String(describing: media)),
-                with button1: \(String(describing: button1)),
-                with button2: \(String(describing: button2)),
-                with callback: \(String(describing: dismissCallback))
-        """)
+        Log.debug("pushDialog")
+        let displayItem = QuestionDialogDisplayItem(
+            texts: texts,
+            primaryButtonTitle: primaryButtonTitle,
+            secondaryButtonTitle: secondaryButtonTitle,
+            callback: callback
+        )
+        didPushDialog?(displayItem)
     }
 
-    func pushInput(with eventTable: WIGEventTable!) {
-        Log.debug("pushInput with eventTable")
+    func pushInput(with eventTable: WIGEventTable) {
+        Log.debug("pushInput")
         let displayItem = QuestionInputDisplayItem(eventTable: eventTable)
         didPushQuestion?(displayItem)
     }
 
-    func showScreen(with screenId: Int32, with details: WIGEventTable!) {
-        Log.debug("showScreen with screenId \(screenId), with details: \(String(describing: details))")
+    func showScreen(with screenId: Int32, with details: WIGEventTable?) {
+        Log.debug("showScreen")
     }
 
-    func playSound(with data: IOSByteArray!, with mimeType: String!) {
-        Log.debug("playSound with data: \(String(describing: data)), with mimeType: \(String(describing: mimeType))")
+    func playSound(with data: IOSByteArray, with mimeType: String) {
+        Log.debug("playSound")
     }
 
     func blockForSaving() {
@@ -75,7 +76,7 @@ extension WIGUIEventHandler: WIGUIProtocol {
         Log.debug("unblock")
     }
 
-    func command(with cmd: String!) {
-        Log.debug("command with cmd: \(String(describing: cmd))")
+    func command(with cmd: String) {
+        Log.debug("command")
     }
 }

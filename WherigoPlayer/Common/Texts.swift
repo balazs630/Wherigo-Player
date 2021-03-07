@@ -6,6 +6,8 @@
 //  Copyright © 2018. Horváth Balázs. All rights reserved.
 //
 
+// swiftlint:disable identifier_name
+
 struct Texts {
     enum Import: String, Localizable {
         case browseCartridgesStep
@@ -27,5 +29,6 @@ struct Texts {
         case resume
         case restart
         case done
+        case ok
     }
 }

@@ -91,5 +91,15 @@ extension CartridgeGameViewController {
                 break
             }
         }
+
+        uiEventHandler.didPushDialog = { [weak self] displayItem in
+            DispatchQueue.main.async {
+                let dialogScreen = UIStoryboard.cartridgeGame
+                    .instantiateViewController(QuestionDialogViewController.self)
+                dialogScreen.displayItem = displayItem
+
+                self?.present(dialogScreen, animated: true)
+            }
+        }
     }
 }

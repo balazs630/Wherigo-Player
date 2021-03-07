@@ -27,6 +27,8 @@
 		AC2410C625A3C100006CD5F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC2410C525A3C100006CD5F0 /* Localizable.strings */; };
 		AC4DFF4F25A1538600E66E9D /* WIGLocationEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */; };
 		AC4DFF5025A1538600E66E9D /* WIGUIEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */; };
+		AC58B65025F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58B64F25F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift */; };
+		AC58B65325F4F54C007D3CAF /* QuestionDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58B65225F4F54C007D3CAF /* QuestionDialogViewController.swift */; };
 		AC74CB0D25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74CB0C25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift */; };
 		AC74CB1125BB9C9600BA5877 /* CartridgeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74CB1025BB9C9600BA5877 /* CartridgeDetails.storyboard */; };
 		AC74CB1725BB9F9000BA5877 /* CartridgeGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */; };
@@ -139,6 +141,8 @@
 		AC2410C525A3C100006CD5F0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AC4DFF4D25A1538500E66E9D /* WIGLocationEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGLocationEventHandler.swift; sourceTree = "<group>"; };
 		AC4DFF4E25A1538600E66E9D /* WIGUIEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIGUIEventHandler.swift; sourceTree = "<group>"; };
+		AC58B64F25F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDialogDisplayItem.swift; sourceTree = "<group>"; };
+		AC58B65225F4F54C007D3CAF /* QuestionDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDialogViewController.swift; sourceTree = "<group>"; };
 		AC74CB0C25BB9C8C00BA5877 /* CartridgeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeDetailsViewController.swift; sourceTree = "<group>"; };
 		AC74CB1025BB9C9600BA5877 /* CartridgeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartridgeDetails.storyboard; sourceTree = "<group>"; };
 		AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartridgeGame.storyboard; sourceTree = "<group>"; };
@@ -288,6 +292,15 @@
 			path = EventHandlers;
 			sourceTree = "<group>";
 		};
+		AC58B64D25F4DA57007D3CAF /* QuestionDialog */ = {
+			isa = PBXGroup;
+			children = (
+				AC58B64F25F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift */,
+				AC58B65225F4F54C007D3CAF /* QuestionDialogViewController.swift */,
+			);
+			path = QuestionDialog;
+			sourceTree = "<group>";
+		};
 		AC74CB0B25BB9C7600BA5877 /* CartridgeDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +314,7 @@
 		AC74CB1425BB9E8A00BA5877 /* CartridgeGame */ = {
 			isa = PBXGroup;
 			children = (
+				AC58B64D25F4DA57007D3CAF /* QuestionDialog */,
 				ACBEC09C25E72186005DA50B /* QuestionInput */,
 				AC74CB1625BB9F9000BA5877 /* CartridgeGame.storyboard */,
 				AC74CB1925BB9FA200BA5877 /* CartridgeGameViewController.swift */,
@@ -799,6 +813,7 @@
 				ACAE1FC225A14AC300606EB6 /* Thing.java in Sources */,
 				ACAE1FBC25A14AC300606EB6 /* CartridgeFile.java in Sources */,
 				ACAE1FB725A14AC300606EB6 /* BaseLib.java in Sources */,
+				AC58B65025F4DC9D007D3CAF /* QuestionDialogDisplayItem.swift in Sources */,
 				ACAE1FCB25A14AC300606EB6 /* Action.java in Sources */,
 				AC1DED3725F418FC006A5BDA /* NSAttributesStringExtension.swift in Sources */,
 				ACAE1FBD25A14AC300606EB6 /* EventTable.java in Sources */,
@@ -823,6 +838,7 @@
 				ACAE1FC125A14AC300606EB6 /* FileHandle.java in Sources */,
 				AC74CB2025BD130900BA5877 /* UIImageViewExtensions.swift in Sources */,
 				ACFF07B625A13A2D005F5499 /* AppDelegate.swift in Sources */,
+				AC58B65325F4F54C007D3CAF /* QuestionDialogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
