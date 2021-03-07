@@ -9,6 +9,8 @@ import UIKit
 
 class MultipleChoiceQuestionViewController: UIViewController {
     // MARK: Outlets
+    @IBOutlet private weak var mediaImageView: UIImageView!
+    @IBOutlet private weak var mediaImageHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var answerPickerView: UIPickerView!
     @IBOutlet private weak var doneButton: UIButton!
@@ -43,6 +45,17 @@ class MultipleChoiceQuestionViewController: UIViewController {
         answerPickerView.delegate = self
         answerPickerView.dataSource = self
         doneButton.setTitle(Texts.General.done.localized, for: .normal)
+        configureMedia()
+    }
+
+    private func configureMedia() {
+        guard let image = displayItem.media else {
+            mediaImageView.isHidden = true
+            return
+        }
+
+        mediaImageView.image = image
+        mediaImageHeightConstraint.constant = mediaImageView.contentClippingRect.height
     }
 }
 

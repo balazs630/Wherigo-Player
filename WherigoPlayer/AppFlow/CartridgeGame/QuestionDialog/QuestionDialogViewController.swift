@@ -9,6 +9,8 @@ import UIKit
 
 class QuestionDialogViewController: UIViewController {
     // MARK: Outlets
+    @IBOutlet private weak var mediaImageView: UIImageView!
+    @IBOutlet private weak var mediaImageHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var primaryButton: UIButton!
     @IBOutlet private weak var secondaryButton: UIButton!
@@ -41,6 +43,7 @@ class QuestionDialogViewController: UIViewController {
 
         configureTexts()
         configureButtons()
+        configureMedia()
     }
 
     private func configureTexts() {
@@ -57,5 +60,15 @@ class QuestionDialogViewController: UIViewController {
         } else {
             secondaryButton.setTitle(displayItem.secondaryButtonTitle, for: .normal)
         }
+    }
+
+    private func configureMedia() {
+        guard let image = displayItem.media.compactMap({ $0 }).first else {
+            mediaImageView.isHidden = true
+            return
+        }
+
+        mediaImageView.image = image
+        mediaImageHeightConstraint.constant = mediaImageView.contentClippingRect.height
     }
 }

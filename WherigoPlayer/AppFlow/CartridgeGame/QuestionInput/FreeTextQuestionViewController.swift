@@ -10,6 +10,8 @@ import UIKit
 class FreeTextQuestionViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet private weak var mediaImageView: UIImageView!
+    @IBOutlet private weak var mediaImageHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var answerTextField: UITextField!
     @IBOutlet private weak var doneButton: UIButton!
@@ -44,6 +46,17 @@ class FreeTextQuestionViewController: UIViewController {
 
         questionLabel.text = displayItem.question
         doneButton.setTitle(Texts.General.done.localized, for: .normal)
+        configureMedia()
+    }
+
+    private func configureMedia() {
+        guard let image = displayItem.media else {
+            mediaImageView.isHidden = true
+            return
+        }
+
+        mediaImageView.image = image
+        mediaImageHeightConstraint.constant = mediaImageView.contentClippingRect.height
     }
 
     // MARK: Keyboard events
