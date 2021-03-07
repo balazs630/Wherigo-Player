@@ -5,6 +5,8 @@
 //  Created by Balázs Horváth on 2021. 01. 05..
 //
 
+import UIKit
+
 class CartridgeService {
     static var cartridgeFiles: [WIGCartridgeFile] {
         wigFiles().compactMap {
@@ -82,6 +84,18 @@ class CartridgeService {
 
     static func hasSavedPlay(for cartridgeFile: WIGCartridgeFile) -> Bool {
         return false
+    }
+
+    static func imageFromByteArray(_ byteArray: IOSByteArray?) -> UIImage? {
+        guard let imageData = byteArray?.toNSData() else { return nil }
+        return UIImage(data: imageData)
+    }
+
+    static func imageFromWIGMedia(_ media: WIGMedia?) -> UIImage? {
+        guard let media = media else { return nil }
+
+        let byteArray = WIGEngine.mediaFile(with: media)
+        return CartridgeService.imageFromByteArray(byteArray)
     }
 }
 

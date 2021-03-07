@@ -67,6 +67,7 @@ extension WIGUIEventHandler: WIGUIProtocol {
         Log.debug("pushDialog")
         let displayItem = QuestionDialogDisplayItem(
             texts: texts,
+            media: media,
             primaryButtonTitle: primaryButtonTitle,
             secondaryButtonTitle: secondaryButtonTitle,
             callback: callback

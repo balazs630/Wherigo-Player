@@ -5,6 +5,8 @@
 //  Created by Balázs Horváth on 2021. 02. 25..
 //
 
+import UIKit
+
 struct QuestionInputDisplayItem {
     enum QuestionInputType: String {
         case freeText = "Text"
@@ -14,6 +16,7 @@ struct QuestionInputDisplayItem {
     let eventTable: WIGEventTable
     let inputType: QuestionInputType?
     let question: String?
+    let media: UIImage?
     let choices: [String]?
 
     init(eventTable: WIGEventTable) {
@@ -27,6 +30,11 @@ struct QuestionInputDisplayItem {
         self.question = {
             let text = eventTable.rawget(withId: "Text") as? String
             return text?.replaceHTMLEntities()
+        }()
+
+        self.media = {
+            let media = eventTable.rawget(withId: "Media") as? WIGMedia
+            return CartridgeService.imageFromWIGMedia(media)
         }()
 
         self.choices = {
