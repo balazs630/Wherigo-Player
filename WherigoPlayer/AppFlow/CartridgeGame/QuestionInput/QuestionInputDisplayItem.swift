@@ -5,8 +5,6 @@
 //  Created by Balázs Horváth on 2021. 02. 25..
 //
 
-import UIKit
-
 struct QuestionInputDisplayItem {
     enum QuestionInputType: String {
         case freeText = "Text"
@@ -21,21 +19,27 @@ struct QuestionInputDisplayItem {
     init(eventTable: WIGEventTable) {
         self.eventTable = eventTable
 
-        let rawInputType = eventTable.rawget(withId: "InputType") as? String
-        self.inputType = QuestionInputType(rawValue: rawInputType ?? "")
+        self.inputType = {
+            let rawInputType = eventTable.rawget(withId: "InputType") as? String
+            return QuestionInputType(rawValue: rawInputType ?? "")
+        }()
 
-        self.question = (eventTable.rawget(withId: "Text") as? String)?
-            .replacingOccurrences(of: "<BR>", with: "")
+        self.question = {
+            let text = eventTable.rawget(withId: "Text") as? String
+            return text?.replaceHTMLEntities()
+        }()
 
-        if let choicesTable = eventTable.rawget(withId: "Choices") as? WIGLuaTableImpl {
-            var choices = [String]()
-            for index in 1...choicesTable.len() {
-                choices.append((choicesTable.rawget(with: jint(index)) as? String) ?? "-")
+        self.choices = {
+            if let choicesTable = eventTable.rawget(withId: "Choices") as? WIGLuaTableImpl {
+                var choices = [String?]()
+                for index in 1...choicesTable.len() {
+                    choices.append(choicesTable.rawget(with: jint(index)) as? String)
+                }
+
+                return choices.compactMap { $0 }
             }
 
-            self.choices = choices
-        } else {
-            self.choices = []
-        }
+            return []
+        }()
     }
 }

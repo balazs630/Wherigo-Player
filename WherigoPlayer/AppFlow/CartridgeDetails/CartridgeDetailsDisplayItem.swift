@@ -22,8 +22,7 @@ struct CartridgeDetailsDisplayItem {
 
     init(cartidgeFile: WIGCartridgeFile) {
         self.name = cartidgeFile.string(forKey: "name_") ?? ""
-        self.description = (cartidgeFile.string(forKey: "description__") ?? "")
-            .replacingOccurrences(of: "<BR>", with: "")
+        self.description = (cartidgeFile.string(forKey: "description__") ?? "").replaceHTMLEntities()
 
         self.coordinate = CLLocationCoordinate2D(
             latitude: cartidgeFile.double(forKey: "latitude_") ?? 0,

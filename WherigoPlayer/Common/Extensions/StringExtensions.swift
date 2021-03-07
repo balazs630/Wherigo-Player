@@ -8,6 +8,18 @@
 
 extension String {
     func localized(tableName: String = "Localizable") -> String {
-        return NSLocalizedString(self, tableName: tableName, value: "", comment: "")
+        NSLocalizedString(self, tableName: tableName, value: "", comment: "")
+    }
+
+    func replaceHTMLEntities() -> String {
+        self
+            .replacingOccurrences(of: "<BR>", with: "\n")
+            .replacingOccurrences(of: "<br>", with: "\n")
+            .replacingOccurrences(of: "&nbsp;", with: " ")
+            .replacingOccurrences(of: "&lt;", with: "<")
+            .replacingOccurrences(of: "&gt;", with: ">")
+            .replacingOccurrences(of: "&amp;", with: "&")
+            .replacingOccurrences(of: "&quot;", with: "\"")
+            .replacingOccurrences(of: "&apos;", with: "'")
     }
 }
